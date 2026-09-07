@@ -1,0 +1,22 @@
+# Core data science stack
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+
+# Notebooks
+jupyter>=1.0
+ipykernel
+
+# Data acquisition
+requests>=2.31
+
+# AI-assisted workflows (CLO-3)
+pandasai>=2.0
+ollama>=0.3
+
+# NOTE: Two tools are installed separately and are NOT pip packages:
+#   - Ollama runtime: https://ollama.com (then `ollama pull llama3.2`)
+#   - n8n: https://docs.n8n.io (e.g. `npx n8n` or Docker)
+# See resources/setup-guide.md for full setup instructions.

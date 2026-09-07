@@ -1,0 +1,29 @@
+# Datasets
+
+Registry of datasets used across the course. Small datasets are committed here;
+large datasets are downloaded via script or linked, never committed to Git.
+
+## Registry
+
+| Dataset | Used in | Source | License / notes |
+|---|---|---|---|
+| Penguins | EDA case study (W8), visualization | seaborn built-in (`sns.load_dataset("penguins")`) | CC0 (Palmer Station LTER) |
+| Tips | Matplotlib/Seaborn demos | seaborn built-in | CC BY (Bryant & Smith) |
+| Flights | Time series / pivot demos | seaborn built-in | public domain |
+| Iris | Classification demo (k-NN, trees) | sklearn / UCI | public domain |
+| Titanic | Cleaning, classification lab | seaborn built-in / Kaggle | CC BY-SA / Kaggle rules apply |
+| California housing | Regression (Lab 5) | `sklearn.datasets.fetch_california_housing` | public domain (StatLib) |
+| Students / exam scores | Cleaning & manipulation (Lab 2, Assignment 1) | see `sources.md` when added | choose CC0/CC BY |
+| Mall customers (or similar) | Clustering (Lab 7) | Kaggle | Kaggle rules apply |
+| Public API sample (e.g., weather, open-meteo) | Data acquisition (W6) | live API via `requests` | check per-API terms |
+
+## Conventions
+
+- Add each committed dataset with a small `README.md` in its subfolder stating
+  provenance, license, and how it was obtained.
+- Never commit files > 10 MB; store a download script in `scripts/` or link to
+  the source instead.
+- Prefer CC0 / CC BY datasets for student-facing materials.
+
+*Work in progress:* `sources.md` and dataset files will be added with each lab
+and assignment.
