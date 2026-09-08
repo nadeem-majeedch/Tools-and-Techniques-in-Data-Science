@@ -223,10 +223,9 @@ In `notebooks/week-14/session-28-agents.ipynb`:
 
 ## 9. Lab exercise
 
-No graded lab this session — it's a build day. **Assignment 3 released**
-(due Session 30): AI-assisted workflow — a PandasAI/Ollama-assisted analysis
-*or* an n8n automation (Session 29), plus the ethics/reproducibility reflection.
-Start planning which component fits your project.
+No graded lab this session — it's a build day: continue your **Assignment 2
+Streamlit app** (due Session 30) and the project's AI component. Today's
+agent loop is exactly the pattern you'll reuse there.
 
 ## 10. Common mistakes
 

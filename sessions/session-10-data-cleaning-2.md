@@ -157,9 +157,9 @@ In `notebooks/week-05/session-10-cleaning-2.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 2 is due today** (`labs/lab-02/`): Pandas data cleaning. Push before the
-deadline. From here on, labs follow the schedule: Lab 3 (Session 12), Lab 4
-(Session 14), and so on.
+**Lab 10 is due today** (`labs/lab-10-data-cleaning-2.md`): data cleaning II —
+strings, dates, outliers. Push before the deadline. From here on, one lab per
+session (see `../labs/README.md`).
 
 ## 10. Common mistakes
 

@@ -35,7 +35,7 @@ Supplementary materials for students and instructors.
 - Ollama model library: https://ollama.com/library
 - n8n documentation: https://docs.n8n.io/
 - PandasAI examples: https://docs.pandas-ai.com/examples
-- Responsible AI reading: see assignment-03 brief and the ethics session (W15)
+- Responsible AI reading: see the ethics session (W15) and the AI-use policy in `../assessment-plan.md`
 
 *Work in progress:* a per-module annotated reading list (`readings.md`) will be
 added as modules begin.

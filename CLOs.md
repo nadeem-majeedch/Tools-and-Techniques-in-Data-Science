@@ -26,8 +26,9 @@ missing values, duplicates, dtype conversion; string operations, `apply`/`map`,
 `melt`/`pivot`; `concat`/`merge`/`join`; Matplotlib and Seaborn plotting; EDA
 workflow (distributions, correlations, grouping).
 
-**Assessed by:** Labs 1–4, Quizzes 1–2, Assignment 1, Midterm exam (practical
-notebook task), Final project (data acquisition, cleaning, and EDA components).
+**Assessed by:** Labs 1–16, Quiz 1, Assignments 1–2, Midterm exam (practical
+notebook task), Final exam (reproducibility items), Final project (data
+acquisition, cleaning, and EDA components).
 
 ## CLO-2 — Tools and basic machine learning
 
@@ -40,8 +41,8 @@ decision trees (confusion matrix, precision, recall, accuracy); k-means
 clustering (elbow method, feature scaling); cross-validation and scikit-learn
 pipelines.
 
-**Assessed by:** Labs 5–7, Quiz 3, Assignment 2, Midterm exam, Final exam,
-Final project (modeling component).
+**Assessed by:** Labs 17–22, Quiz 2, Midterm exam (entry-level
+item), Final exam, Final project (modeling component).
 
 ## CLO-3 — AI-assisted data science workflows
 
@@ -56,20 +57,21 @@ tool-calling and simple agent loops; n8n workflow automation; reproducibility
 (seeds, environments, version control, documenting AI-assisted steps); bias,
 privacy, data provenance, and transparency.
 
-**Assessed by:** Labs 8–10, Assignment 3, Final exam, Final project
-(AI-assisted component + ethics/reproducibility reflection).
+**Assessed by:** Labs 24–32, Quiz 2, Assignment 2 (reproducibility,
+documentation, responsible data use), Final exam, Final project (AI-assisted
+component + ethics/reproducibility reflection).
 
 ## CLO coverage matrix
 
 | Assessment | CLO-1 | CLO-2 | CLO-3 |
 |---|---|---|---|
-| Labs 1–4 | ✓ | | |
-| Labs 5–7 | | ✓ | |
-| Labs 8–10 | | | ✓ |
-| Quizzes 1–3 | ✓ | ✓ | ✓ |
+| Labs 1–16 | ✓ | | |
+| Labs 17–22 | | ✓ | |
+| Labs 24–32 | | | ✓ |
+| Quiz 1 | ✓ | | |
+| Quiz 2 | | ✓ | ✓ |
 | Assignment 1 | ✓ | | |
-| Assignment 2 | | ✓ | |
-| Assignment 3 | | | ✓ |
+| Assignment 2 | ✓ | | ✓ |
 | Midterm exam | ✓ | ✓ | |
 | Final exam | ✓ | ✓ | ✓ |
 | Final project | ✓ | ✓ | ✓ |

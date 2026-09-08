@@ -24,6 +24,11 @@ By the end of this notebook you will be able to:
 
 ---
 """),
+    ("code", """# Make sure the datasets/ folder exists next to this notebook.
+from pathlib import Path
+Path("datasets").mkdir(exist_ok=True)
+print("datasets/ ready")
+"""),
     ("md", """## Theory: what is an API?
 
 An **API** (Application Programming Interface) is a contract: you send a

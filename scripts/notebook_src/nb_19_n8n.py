@@ -23,11 +23,16 @@ By the end of this notebook you will be able to:
 1. Explain the node-and-wire model of a workflow.
 2. Identify the three parts of every workflow: trigger, processing, output.
 3. Map an n8n workflow to the data lifecycle (acquire → process → communicate).
-4. Build the equivalent pipeline in Python with idempotency and error handling.
-5. Read and export a workflow as JSON (reproducibility).
+4. Build the equivalent pipeline in Python with idempotency and error handling.5. Read and export a workflow as JSON (reproducibility).
 
 ---
-"""),("md", """## Theory: nodes and wires
+"""),
+    ("code", """# Make sure the datasets/ folder exists next to this notebook.
+from pathlib import Path
+Path("datasets").mkdir(exist_ok=True)
+print("datasets/ ready")
+"""),
+    ("md", """## Theory: nodes and wires
 
 Every n8n workflow has:
 

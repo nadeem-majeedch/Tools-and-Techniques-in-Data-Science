@@ -152,9 +152,10 @@ Continue in `notebooks/week-03/session-06-numpy-2.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 1 is due today** (push before session end if possible, otherwise before
-tomorrow's deadline): `labs/lab-01/` — NumPy arrays, operations, masks,
-aggregation, plus checkpoint questions. Graded per `../assessment-plan.md`.
+**Lab 06 is due today** (push before session end if possible, otherwise before
+tomorrow's deadline): `labs/lab-06-numpy-part-2.md` — NumPy masks,
+aggregation, random, broadcasting, plus checkpoint questions. Graded per
+`../assessment-plan.md`.
 
 ## 10. Common mistakes
 

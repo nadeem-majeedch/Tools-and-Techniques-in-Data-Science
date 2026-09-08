@@ -7,15 +7,14 @@ Module A: Weeks 1–8 (CLO-1) · Module B: Weeks 9–12 (CLO-2) · Module C: Wee
 
 | Event | Session | Date (fill in) |
 |---|---|---|
-| Quiz 1 (Python + NumPy) | 7 | |
-| Quiz 2 (Pandas + cleaning) | 13 | |
+| Quiz 1 (Weeks 1–7: Python → visualization) | 15 | |
 | Assignment 1 due | 15 | |
 | Midterm exam | 16 | |
-| Quiz 3 (ML) | 23 | |
-| Assignment 2 due | 25 | |
+| Quiz 2 (Weeks 8–14: EDA → AI agents) | 29 | |
+| Assignment 2 released | 17 | |
 | Final project kickoff | 23 | |
 | Project proposal due | 26 | |
-| Assignment 3 due | 30 | |
+| Assignment 2 due | 30 | |
 | Final project presentations | 31–32 | |
 | Final exam | 32 | |
 
@@ -28,41 +27,41 @@ Module A: Weeks 1–8 (CLO-1) · Module B: Weeks 9–12 (CLO-2) · Module C: Wee
 | 2 | 3 | Jupyter in depth: cells, markdown, kernels, magic commands, notebook hygiene | Notebook exercise; run-all check |
 | 2 | 4 | Git & GitHub: init/clone, add/commit/push, branches, pull requests | Set up personal repo; first commit |
 | 3 | 5 | NumPy I: `ndarray`, creation, indexing, slicing, dtypes | In-class exercises |
-| 3 | 6 | NumPy II: universal functions, broadcasting, aggregation, `np.random` | **Lab 1 due** (NumPy) |
-| 4 | 7 | Pandas I: Series & DataFrame, construction, attributes, `loc`/`iloc` | **Quiz 1** at session start |
+| 3 | 6 | NumPy II: universal functions, broadcasting, aggregation, `np.random` | **Lab 06 due** (NumPy II) |
+| 4 | 7 | Pandas I: Series & DataFrame, construction, attributes, `loc`/`iloc` | In-class exercises |
 | 4 | 8 | Pandas II: reading/writing CSV, Excel, JSON; filtering and sorting | In-class exercises |
 | 5 | 9 | Data cleaning I: missing values, duplicates, dtype conversion | In-class exercises |
-| 5 | 10 | Data cleaning II: string methods, `apply`/`map`, renaming, `melt`/`pivot` | **Lab 2 due** (cleaning) |
+| 5 | 10 | Data cleaning II: string methods, `apply`/`map`, renaming, `melt`/`pivot` | **Lab 10 due** (cleaning II) |
 | 6 | 11 | Data acquisition: local files, public APIs with `requests`, scraping ethics | Notebook: API exercise |
-| 6 | 12 | Combining data: `concat`, `merge`, `join`; relational thinking | **Lab 3 due**; **Assignment 1 released** |
-| 7 | 13 | Matplotlib: line, bar, scatter, histogram; figures/axes; saving figures | **Quiz 2** at session start |
-| 7 | 14 | Seaborn: statistical plots, `pairplot`, heatmaps; visualization principles | **Lab 4 due** (visualization) |
-| 8 | 15 | EDA workflow: summary stats, distributions, correlations; EDA case study | **Assignment 1 due**; EDA case study (penguins) |
+| 6 | 12 | Combining data: `concat`, `merge`, `join`; relational thinking | **Lab 12 due**; **Assignment 1 released** |
+| 7 | 13 | Matplotlib: line, bar, scatter, histogram; figures/axes; saving figures | In-class exercises |
+| 7 | 14 | Seaborn: statistical plots, `pairplot`, heatmaps; visualization principles | **Lab 14 due** (seaborn) |
+| 8 | 15 | EDA workflow: summary stats, distributions, correlations; EDA case study | **Quiz 1** at session start (Weeks 1–7); **Assignment 1 due**; EDA case study (penguins) |
 | 8 | 16 | **Midterm exam** (written + practical notebook task on CLO-1) | Exam session |
 
 ## Module B — Machine learning basics (CLO-2)
 
 | Week | Session | Topic | Activities / deliverables |
 |---|---|---|---|
-| 9 | 17 | Intro to ML; supervised vs. unsupervised; scikit-learn overview; train/test split | Notebook: first model |
-| 9 | 18 | Linear regression; metrics (MSE, R²) | **Lab 5 due** (regression) |
+| 9 | 17 | Intro to ML; supervised vs. unsupervised; scikit-learn overview; train/test split | **Assignment 2 released** (API + Streamlit app, due W15 S30); Notebook: first model |
+| 9 | 18 | Linear regression; metrics (MSE, R²) | **Lab 18 due** (regression) |
 | 10 | 19 | Classification I: k-NN and logistic regression; confusion matrix, precision/recall | In-class exercises |
-| 10 | 20 | Classification II: decision trees; overfitting; basic hyperparameter tuning | **Lab 6 due** (classification) |
+| 10 | 20 | Classification II: decision trees; overfitting; basic hyperparameter tuning | **Lab 20 due** (classification II) |
 | 11 | 21 | Unsupervised learning: k-means; elbow method; feature scaling | In-class exercises |
-| 11 | 22 | Pipelines & cross-validation; choosing the right model | **Lab 7 due** (clustering + pipelines) |
-| 12 | 23 | Final project kickoff: problem framing, project brief, data selection | **Quiz 3**; **Project released**; **Assignment 2 released** |
+| 11 | 22 | Pipelines & cross-validation; choosing the right model | **Lab 22 due** (pipelines & CV) |
+| 12 | 23 | Final project kickoff: problem framing, project brief, data selection | **Project released** |
 | 12 | 24 | Reproducible workflows: virtual environments, `requirements.txt`, random seeds, project structure | Project workshop time |
 
 ## Module C — AI-assisted workflows (CLO-3)
 
 | Week | Session | Topic | Activities / deliverables |
 |---|---|---|---|
-| 13 | 25 | LLMs for data science: what they are, prompting for analysis, when (not) to use them | **Assignment 2 due** |
-| 13 | 26 | PandasAI: natural-language queries on DataFrames; limitations and reproducibility | **Lab 8 due**; **Project proposal due** |
-| 14 | 27 | Ollama: install, pull models, chat from Python; local vs. cloud models | **Lab 9 due** (Ollama) |
-| 14 | 28 | Simple AI agents: tool calling, agent loops; automating a data-analysis subtask | **Assignment 3 released** |
-| 15 | 29 | n8n: visual workflows; automating data collection/processing | In-class build |
-| 15 | 30 | Ethics & responsible AI: bias, privacy, provenance, transparency; documenting AI-assisted work | **Lab 10 due** (n8n + ethics reflection); **Assignment 3 due** |
+| 13 | 25 | LLMs for data science: what they are, prompting for analysis, when (not) to use them | In-class exercises |
+| 13 | 26 | PandasAI: natural-language queries on DataFrames; limitations and reproducibility | **Lab 26 due**; **Project proposal due** |
+| 14 | 27 | Ollama: install, pull models, chat from Python; local vs. cloud models | **Lab 27 due** (Ollama) |
+| 14 | 28 | Simple AI agents: tool calling, agent loops; automating a data-analysis subtask | Build day: Assignment 2 app + project |
+| 15 | 29 | n8n: visual workflows; automating data collection/processing | **Quiz 2** at session start (Weeks 8–14); In-class build |
+| 15 | 30 | Ethics & responsible AI: bias, privacy, provenance, transparency; documenting AI-assisted work | **Lab 30 due**; **Assignment 2 due** (API + Streamlit app) |
 | 16 | 31 | Final project presentations (part 1); peer feedback | Presentations |
 | 16 | 32 | Final project presentations (part 2); course wrap-up; **final exam** | **Final exam**; project final submission |
 
@@ -70,11 +69,10 @@ Module A: Weeks 1–8 (CLO-1) · Module B: Weeks 9–12 (CLO-2) · Module C: Wee
 
 | Deliverable | Type | Released | Due | CLO |
 |---|---|---|---|---|
-| Labs 1–10 | Weekly labs | each week | next session after release | 1, 2, 3 |
-| Quiz 1, 2, 3 | In-class, 15 min | session start | same session | 1, 2, 3 |
-| Assignment 1 — Cleaning & manipulation | Individual | W6 S12 | W8 S15 | CLO-1 |
-| Assignment 2 — ML modeling | Individual | W12 S23 | W13 S25 | CLO-2 |
-| Assignment 3 — AI-assisted workflow | Individual | W14 S28 | W15 S30 | CLO-3 |
+| Labs 1–32 | Weekly labs | each week | next session after release | 1, 2, 3 |
+| Quiz 1, 2 | In-class, ~25 min | session start | same session | 1, 2, 3 |
+| Assignment 1 — Data cleaning & EDA | Individual | W6 S12 | W8 S15 | CLO-1 |
+| Assignment 2 — API + Streamlit data app | Individual | W9 S17 | W15 S30 | CLO-1, CLO-3 |
 | Midterm exam | Exam | — | W8 S16 | CLO-1, CLO-2 |
 | Final exam | Exam | — | W16 S32 | CLO-1, CLO-2, CLO-3 |
 | Final project | Team (2–3) | W12 S23 | W16 S31/32 | CLO-1, CLO-2, CLO-3 |

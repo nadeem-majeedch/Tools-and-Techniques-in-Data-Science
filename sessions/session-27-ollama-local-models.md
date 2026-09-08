@@ -194,10 +194,9 @@ In `notebooks/week-14/session-27-ollama.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 9 is due today** (`labs/lab-09/`): Ollama — pull a model, chat from
-Python, use it as the PandasAI engine, compare system prompts, and write a
-short reflection on local vs. cloud for your project's data (privacy angle).
-Push.
+**Lab 27 is due today** (`labs/lab-27-ollama.md`): Ollama — pull a model,
+chat from Python, compare system prompts, and write a short reflection on
+local vs. cloud for your project's data (privacy angle). Push.
 
 ## 10. Common mistakes
 
@@ -222,8 +221,8 @@ Push.
 
 CLO-3: Ollama provides the "local models" capability named in the CLO, enabling
 private, reproducible AI-assisted workflows. Combined with Session 26's auditing
-discipline, it's the complete local-AI data workflow used in Lab 9, Assignment
-3, and the project.
+discipline, it's the complete local-AI data workflow used in Lab 27, the
+project's AI component, and Assignment 2's verification protocol.
 
 ## 13. Suggested homework
 

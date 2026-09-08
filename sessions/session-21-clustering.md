@@ -187,9 +187,8 @@ In `notebooks/week-11/session-21-clustering.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 7** (due Session 22): `labs/lab-07/` — clustering & pipelines: k-means on
-a scaled dataset, elbow plot, cluster-vs-label cross-tab, plus a first
-`Pipeline` preview (scaler → k-means). Checkpoint questions included.
+**Lab 21** (`labs/lab-21-clustering.md`) — due before Session 22: clustering —
+k-means on a scaled dataset, elbow plot, cluster-vs-label cross-tab.
 
 ## 10. Common mistakes
 

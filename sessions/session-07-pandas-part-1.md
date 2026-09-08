@@ -151,8 +151,8 @@ In `notebooks/week-04/session-07-pandas-1.ipynb`:
 
 ## 9. Lab exercise
 
-No lab due this session (Lab 2 comes after cleaning, Session 10). **Quiz 1 today**
-(covers Python + NumPy, Sessions 1–6) — see `../quizzes/quiz-01`.
+**Lab 07** (`../labs/lab-07-pandas-part-1.md`) — due before Session 8. Quiz 1
+runs later: **Session 15**, covering Weeks 1–7 (`../quizzes/quiz-1.md`).
 
 ## 10. Common mistakes
 

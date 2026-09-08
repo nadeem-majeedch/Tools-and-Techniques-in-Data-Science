@@ -116,7 +116,7 @@ one question) for each team; these forms count toward participation.
 No lab. Final deliverables to confirm before Session 32:
 - Repo complete: executed notebooks, `requirements.txt`, README with "How to reproduce" (Session 24).
 - Final submission due Session 32 (repo + final report/reflection + presentation).
-- **Assignment 3** (due Session 30) already pushed.
+- **Assignment 2** (due Session 30) already pushed.
 
 ## 10. Common mistakes (presentation-specific)
 

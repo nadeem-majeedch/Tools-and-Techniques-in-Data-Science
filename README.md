@@ -60,12 +60,15 @@ Detailed week-by-week plan: [weekly-schedule.md](weekly-schedule.md)
 ├── weekly-schedule.md     # Week-by-week, session-by-session plan
 ├── assessment-plan.md     # Assessments, rubrics, policies
 ├── requirements.txt       # Python dependencies
-├── quizzes/               # Module quizzes (+ answer keys)
-├── assignments/           # 3 graded assignments
-├── labs/                  # 10 hands-on lab exercises
-├── notebooks/             # In-class notebooks (week/session based)
+├── sessions/              # Per-session teaching material (32 sessions)
+├── course-notebooks/      # Executed Jupyter notebooks (20, numbered 01–20)
+├── module-c/              # AI-assisted DS teaching pack (11 topics, CLO-3)
+├── quizzes/               # Quiz bank (quiz-1, quiz-2) with answer keys
+├── exams/                 # Midterm + final exams with keys
+├── assignments/           # 2 graded assignments (cleaning+EDA, API+Streamlit)
+├── labs/                  # 32 lab exercises + instructor solutions
 ├── datasets/              # Dataset registry and small data files
-├── projects/              # Final project brief, milestones, rubric
+├── projects/              # Final project framework (guidelines, rubric, templates)
 └── resources/             # Setup guide, readings, cheatsheets
 ```
 

@@ -171,8 +171,8 @@ print("push happens on GitHub with your credentials - see setup-guide.md")
 
 1. Work in your notebook, save, **Restart & Run All**.
 2. `git status` — review what changed.
-3. `git add labs/lab-01/` — stage *only* the relevant files.
-4. `git commit -m "feat: finish lab-01 numpy exercises"`.
+3. `git add labs/lab-04-git-and-github.md` — stage *only* the relevant files.
+4. `git commit -m "feat: finish lab-04 git exercises"`.
 5. `git push origin main`.
 6. Paste the repo URL where the assignment asks for submission.
 

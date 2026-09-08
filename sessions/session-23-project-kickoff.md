@@ -151,8 +151,7 @@ Show how each rubric line in `../assessment-plan.md` maps to a proposal line.
 No traditional lab — the **deliverable is the project proposal** (due Session
 26): one page covering question, data (source + license), plan with milestones,
 and risks. Template: `../projects/final-project-brief.md` (added with the
-brief). **Quiz 3 today** (ML, Sessions 17–22). **Assignment 2 released** (due
-Session 25).
+brief).
 
 ## 10. Common mistakes
 

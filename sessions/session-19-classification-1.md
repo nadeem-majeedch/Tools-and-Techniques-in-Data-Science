@@ -190,9 +190,9 @@ In `notebooks/week-10/session-19-classification-1.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 6** (due Session 20): `labs/lab-06/` — classification: k-NN and logistic
-regression on a labeled dataset, confusion matrix + classification report,
-k-tuning exercise, checkpoint questions.
+**Lab 19** (`labs/lab-19-classification-1.md`) — due before Session 20:
+classification I — k-NN and logistic regression on a labeled dataset,
+confusion matrix + classification report, k-tuning exercise.
 
 ## 10. Common mistakes
 
@@ -217,7 +217,7 @@ k-tuning exercise, checkpoint questions.
 
 CLO-2: classification with k-NN and logistic regression is the second "basic
 machine learning technique" — plus the evaluation toolkit (confusion matrix,
-precision/recall) used by every later classifier, Assignment 2, and the project.
+precision/recall) used by every later classifier and the project's modeling component.
 
 ## 13. Suggested homework
 

@@ -182,9 +182,9 @@ In `notebooks/week-06/session-11-data-acquisition.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 3** (due Session 12): `labs/lab-03/` — data acquisition & combining: fetch
-a small public API dataset, flatten it, cache it, and load a local CSV — then
-combine them (Session 12's tool) and answer two checkpoint questions.
+**Lab 11** (`labs/lab-11-data-acquisition.md`) — due before Session 12: data
+acquisition — fetch a small public API dataset, flatten it, cache it, and load
+a local CSV, then answer two checkpoint questions.
 
 ## 10. Common mistakes
 
@@ -213,7 +213,8 @@ to the ethics dimension of CLO-3 (deepened in Sessions 24 and 30).
 
 ## 13. Suggested homework
 
-- Finish Lab 3 (due Session 12) and push.
+- Finish Lab 11 (`labs/lab-11-data-acquisition.md`, due before Session 12) and
+  push.
 - Practice: fetch another keyless API (e.g., `https://api.open-meteo.com` variants, or a country/flag/quote API) and flatten it yourself.
 - Read: the `requests` quickstart (requests.readthedocs.io) — sections "Quickstart" and "Errors and Exceptions".
 - Preview: build two small DataFrames with a shared key column (`id`); Session 12 shows how `merge`/`concat` combine them and why this is the basis of relational data.

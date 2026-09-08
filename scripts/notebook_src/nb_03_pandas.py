@@ -24,6 +24,11 @@ By the end of this notebook you will be able to:
 
 ---
 """),
+    ("code", """# Make sure the datasets/ folder exists next to this notebook.
+from pathlib import Path
+Path("datasets").mkdir(exist_ok=True)
+print("datasets/ ready")
+"""),
     ("md", """## Theory: Series vs DataFrame
 
 - A **Series** is a labeled 1-D array: values plus an index (0, 1, 2, ... by

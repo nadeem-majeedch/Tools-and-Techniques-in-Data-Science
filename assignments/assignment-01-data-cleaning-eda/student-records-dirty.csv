@@ -1,0 +1,205 @@
+student_id,name,gender,program,semester,gpa,attendance_pct,email,enrolled_date,study_hours
+S001,Daniyal Ali,F,AI,Fall 2023,3.66,73,daniyal.ali@student.example.edu,2023-09-01,15
+S002,Zainab Qureshi,F,DS,Spring 2024,2.81,90,zainab.qureshi@student.example.edu,05/09/2023,
+S003,Mubashir Qureshi,M,AI,Spring 2024,2.04,90,mubashir.qureshi@student.example.edu,"Sept 9, 2023",16
+S004,Hamza Siddiqui,F,DS,Spring 2024,2.98,93,hamza.siddiqui@student.example.edu,2023-09-07,27
+S005,Rania Baig,F,CS,Spring 2024,3.34,82,rania.baig@student.example.edu,08/09/2023,3
+S006,Ahmed Shah,M,CS,Fall 2024,2.92,88,ahmed.shah@student.example.edu,"Sept 6, 2023",16
+S007,Parveen Sheikh,M,DS,Fall 2023,,87,parveen.sheikh@student.example.edu,2023-09-08,11
+S008,Uzma Sheikh,F,DS,Fall 2023,1.69,78,,2023-09-02,
+S009,Mubashir Sheikh,F,DS,Spring 2024,1.74,89,mubashir.sheikh@student.example.edu,08/09/2023,8
+S010,Faraz Khan,F,CS ,Fall 2024,2.48,90,faraz.khan@student.example.edu,"Sept 7, 2023",25
+S011,Nimra Shah,M,DS,Spring 2024,3.32,93,nimra.shah@student.example.edu,2023-09-02,26
+S012,Zainab Hussain,m ,AI,Fall 2024,2.4,76,zainab.hussain@student.example.edu,03/09/2023,14
+S013,Faraz Ahmed,F,CS,Fall 2023,3.41,87,,"Sept 5, 2023",17
+S014,Zainab Siddiqui,F,CS,Spring 2024,3.05,90,zainab.siddiqui@student.example.edu,09/09/2023,15
+S015,Ahmed Ali,M,CS,Spring 2024,2.63,100,ahmed.ali@student.example.edu,2023-09-09,40
+S017,Ali Khan,M,AI,Spring 2024,2.82,79,ali.khan@student.example.edu,06/09/2023,32
+S018,Iqra Chaudhry,F,DS,Spring 2024,3.4,75,iqra.chaudhry@student.example.edu,"Sept 5, 2023",16
+S019,Ali Ali,F,CS,Fall 2023,3.5,87,Ali.Ali@Student.Example.Edu,"Sept 5, 2023",1
+S020,Waqar Chaudhry,M,AI,Fall 2024,2.34,81,waqar.chaudhry@student.example.edu,2023-09-07,6
+S022,Daniyal Ali,F,CS,Spring 2024,3.2,70,daniyal.ali@student.example.edu,"Sept 6, 2023",20
+S023,Qasim Ansari,M,CS,Spring 2024,2.51,79,qasim.ansari@student.example.edu,"Sept 6, 2023",18
+S024,Parveen Baig,F,CS,Spring 2024,2.44,77,parveen.baig@student.example.edu,2023-09-05,20
+S025,Sana Baig,M,AI,Spring 2024,3.85,62,sana.baig@student.example.edu,01/09/2023,17
+S026,Ahmed Ansari,F,CS,fall2023,3.93,90,ahmed.ansari@student.example.edu,2023-09-09,15
+S028,Mubashir Ali,F,DS,Spring 2024 ,2.87,69,mubashir.ali@student.example.edu,2023-09-01,29
+S029,Waqar Chaudhry,F,AI,Spring 2024,3.98,60,Waqar.Chaudhry@Student.Example.Edu,"Sept 5, 2023",38
+S030,Uzma Malik,M,DS,Fall 2024,2.66,85,uzma.malik@student.example.edu,09/09/2023,5
+S031,Sana Baig,m ,CS,Fall 2024,3.38,63,sana.baig@student.example.edu,2023-09-03,19
+S032,Qasim Sheikh,F,DS,Spring 2024,3.18,64,qasim.sheikh@student.example.edu,2023-09-05,27
+S033,Sara Javed,M,CS,Fall 2023,2.63,72,sara.javed@student.example.edu,2023-09-05,12
+S034,Hina Baig,M,CS,Fall 2024,2.53,78,Hina.Baig@Student.Example.Edu,05/09/2023,14
+S036,Ahmed Shah,M,ds,Fall 2024,3.15,74,Ahmed.Shah@Student.Example.Edu,2023-09-02,10
+S037,Ali Khan,F,DS,Fall 2023,3.34,75,ali.khan@student.example.edu,2023-09-06,10
+S038,Tariq Qureshi,F, Artificial Intelligence,Fall 2023,,77,tariq.qureshi@student.example.edu,01/09/2023,19
+S039,Rania Ahmed,F,CS,Fall 2024,2.76,125,Rania.Ahmed@Student.Example.Edu,2023-09-05,21
+S040,Ahmed Chaudhry,F,AI,Fall 2024,2.87,93,Ahmed.Chaudhry@Student.Example.Edu,"Sept 4, 2023",16
+S041,Bilal Hussain,F,ds,Fall 2024,2.54,83,bilal.hussain@student.example.edu,"Sept 9, 2023",12
+S043,Hamza Hussain,F,DS,Fall 2023,3.1,78,hamza.hussain@student.example.edu,01/09/2023,15
+S044,Zainab Butt,F,AI,fall2023,2.64,79,zainab.butt@student.example.edu,08/09/2023,8
+S045,Kiran Hussain,M,DS,Spring 2024,2.38,92,kiran.hussain@student.example.edu,"Sept 8, 2023",20
+S046,Omer Qureshi,M,DS,Fall 2024,2.04,74,omer.qureshi@student.example.edu,"Sept 4, 2023",39
+S047,Nimra Malik,F,DS,Spring 2024,2.22,,nimra.malik@student.example.edu,2023-09-07,16
+S048,Uzma Shah,F,CS,Fall 2024,2.73,73,uzma.shah@student.example.edu,"Sept 9, 2023",11
+S049,Rania Malik,M,AI,Spring 2024,3.24,70,rania.malik@student.example.edu,08/09/2023,23
+S050,Daniyal Ahmed,M,DS,Fall 2024,2.99,,daniyal.ahmed@student.example.edu,08/09/2023,25
+S051,Ahmed Malik,F,AI,Fall 2024,3.38,86,ahmed.malik@student.example.edu,"Sept 3, 2023",28
+S052,Ayesha Qureshi,F,CS,Spring 2024,3.49,75,Ayesha.Qureshi@Student.Example.Edu,05/09/2023,16
+S053,Hamza Malik,M,CS,Fall 2024,3.05,74,hamza.malik@student.example.edu,05/09/2023,29
+S054,Sara Shah,M,CS,Spring 2024,3.17,125,sara.shah@student.example.edu,2023-09-02,22
+S055,Parveen Butt,M,DS,Spring 2024,4.9,85,parveen.butt@student.example.edu,2023-09-07,7
+S056,Fatima Khan,M,DS,Spring 2024,3.17,83,fatima.khan@student.example.edu,08/09/2023,21
+S057,Uzma Khan,M,DS,Fall 2023,3.26,84,Uzma.Khan@Student.Example.Edu,"Sept 1, 2023",19
+S058,Fatima Qureshi,M,DS,Spring 2024,1.81,79,fatima.qureshi@student.example.edu,01/09/2023,20
+S059,Omer Malik,M,CS,Fall 2023,3.58,97,omer.malik@student.example.edu,"Sept 1, 2023",10
+S060,Bilal Shah,F,DS,Fall 2024,3.66,86,bilal.shah@student.example.edu,06/09/2023,14
+S061,Qasim Ahmed,F,AI,Spring 2024,3.06,79,,2023-09-05,2
+S062,Daniyal Shah,m ,CS,Spring 2024,3.36,,daniyal.shah@student.example.edu,2023-09-04,99
+S063,Hina Khan,F,DS,Fall 2024,2.69,71,hina.khan@student.example.edu,01/09/2023,13
+S064,Waqar Siddiqui,M,AI,Fall 2023,2.61,,waqar.siddiqui@student.example.edu,"Sept 8, 2023",26
+S065,Mubashir Ahmed,M,DS,Fall 2023,,,mubashir.ahmed@student.example.edu,2023-09-03,23
+S066,Omer Javed,M,AI,Spring 2024,2.14,81,omer.javed@student.example.edu,2023-09-06,8
+S067,Faraz Ahmed,M,DS,Spring 2024,2.35,84,faraz.ahmed@student.example.edu,2023-09-08,10
+S068,Maryam Ali,M,DS,Fall 2023,3.94,99,maryam.ali@student.example.edu,2023-09-05,13
+S069,Qasim Shah,M,AI,Fall 2024,4.9,80,qasim.shah@student.example.edu,09/09/2023,
+S070,Waqar Ali,F,DS,Fall 2023,3.0,88,waqar.ali@student.example.edu,2023-09-01,32
+S071,Hamza Siddiqui,F,DS,Fall 2024,3.25,84,hamza.siddiqui@student.example.edu,2023-09-05,23
+S072,Usman Qureshi,m ,CS,Spring 2024,3.01,86,Usman.Qureshi@Student.Example.Edu,"Sept 8, 2023",16
+S073,Uzma Baig,M,CS,Fall 2024,4.0,90,uzma.baig@student.example.edu,2023-09-06,14
+S074,Daniyal Sheikh,M, Artificial Intelligence,Spring 2024,2.89,85,daniyal.sheikh@student.example.edu,2023-09-09,16
+S075,Parveen Malik,M,CS,Fall 2023,3.91,81,parveen.malik@student.example.edu,"Sept 9, 2023",22
+S076,Faraz Khan,F,CS,Fall 2024,2.28,82,faraz.khan@student.example.edu,"Sept 6, 2023",
+S077,Waqar Ahmed,F,AI,fall2023,2.74,92,waqar.ahmed@student.example.edu,2023-09-06,25
+S078,Ahmed Ansari,M,AI,Fall 2024,2.59,78,ahmed.ansari@student.example.edu,2023-09-03,20
+S079,Hamza Butt,M,CS,Fall 2023,2.83,,hamza.butt@student.example.edu,2023-09-01,3
+S080,Usman Qureshi,M,AI,Spring 2024,3.48,77,usman.qureshi@student.example.edu,"Sept 6, 2023",24
+S081,Hina Sheikh,F,DS,Fall 2023,2.78,87,hina.sheikh@student.example.edu,"Sept 9, 2023",25
+S082,Hina Siddiqui,M,AI,Spring 2024,2.96,86,hina.siddiqui@student.example.edu,2023-09-08,22
+S083,Qasim Raza,M,CS,Fall 2023,2.3,92,qasim.raza@student.example.edu,03/09/2023,5
+S084,Waqar Qureshi,M,DS,Fall 2024,2.16,80,waqar.qureshi@student.example.edu,2023-09-07,
+S085,Hamza Malik,M,AI,Fall 2024,4.9,94,hamza.malik@student.example.edu,"Sept 5, 2023",19
+S086,Sana Malik,F,CS,Spring 2024,2.83,72,sana.malik@student.example.edu,2023-09-09,25
+S087,Tariq Raza,M,DS,Fall 2024,2.55,87,Tariq.Raza@Student.Example.Edu,08/09/2023,17
+S088,Sara Khan,F,DS,Spring 2024,3.07,82,sara.khan@student.example.edu,"Sept 5, 2023",23
+S089,Usman Qureshi,M,CS,Fall 2023,3.17,92,usman.qureshi@student.example.edu,"Sept 5, 2023",14
+S090,Waqar Ali,F,DS,fall2023,3.82,80,waqar.ali@student.example.edu,2023-09-02,6
+S091,Faraz Sheikh,F,CS,Spring 2024,3.7,73,Faraz.Sheikh@Student.Example.Edu,2023-09-06,9
+S092,Kiran Ali,M,CS ,Spring 2024,4.9,85,,"Sept 7, 2023",15
+S093,Laila Baig,F,DS,Spring 2024,2.42,100,Laila.Baig@Student.Example.Edu,2023-09-05,18
+S094,Maryam Sheikh,M,DS,Fall 2024,2.85,86,maryam.sheikh@student.example.edu,"Sept 5, 2023",18
+S095,Mubashir Sheikh,F,CS,Fall 2024,3.01,79,mubashir.sheikh@student.example.edu,2023-09-02,9
+S096,Uzma Ali,M,DS,Fall 2023,2.78,72,uzma.ali@student.example.edu,"Sept 5, 2023",7
+S097,Maryam Siddiqui,M,AI,Spring 2024 ,2.5,91,maryam.siddiqui@student.example.edu,2023-09-07,27
+S098,Waqar Ali,M,DS,Fall-2024,3.33,73,waqar.ali@student.example.edu,2023-09-02,9
+S100,Omer Butt,F,AI,Spring 2024,2.29,77,omer.butt@student.example.edu,"Sept 6, 2023",23
+S101,Emaan Baig,M,AI,Fall 2023,,81,emaan.baig@student.example.edu,2023-09-09,23
+S102,Fatima Chaudhry,M,DS,Fall 2024,3.05,73,fatima.chaudhry@student.example.edu,06/09/2023,14
+S104,Parveen Shah,F,CS,fall2023,2.71,87,parveen.shah@student.example.edu,2023-09-09,
+S105,Parveen Siddiqui,m ,CS,Spring 2024,3.25,85,parveen.siddiqui@student.example.edu,"Sept 4, 2023",20
+S106,Daniyal Baig,M,DS,Spring 2024,3.2,86,daniyal.baig@student.example.edu,2023-09-08,26
+S107,Usman Shah,M,CS,Fall 2024,2.7,82,Usman.Shah@Student.Example.Edu,2023-09-07,16
+S108,Ahmed Ahmed,m ,CS,Fall 2024,3.72,85,ahmed.ahmed@student.example.edu,2023-09-05,27
+S109,Nimra Raza,M,CS,Fall 2023,3.13,81,Nimra.Raza@Student.Example.Edu,07/09/2023,25
+S110,Mubashir Sheikh,F, Artificial Intelligence,Spring 2024,,81,mubashir.sheikh@student.example.edu,2023-09-06,14
+S111,Ayesha Khan,m ,AI,Spring 2024,2.74,90,ayesha.khan@student.example.edu,"Sept 1, 2023",22
+S112,Ayesha Siddiqui,F,DS,Spring 2024,2.86,,ayesha.siddiqui@student.example.edu,2023-09-08,6
+S113,Sana Javed,M,DS,Spring 2024,4.0,94,sana.javed@student.example.edu,03/09/2023,2
+S114,Hina Baig,M,AI,Spring 2024,2.17,96,hina.baig@student.example.edu,2023-09-02,32
+S114,Hina Baig,M,AI,Spring 2024,2.17,96,hina.baig@student.example.edu,2023-09-02,32
+S115,Usman Baig,F,AI,Spring 2024,3.38,65,usman.baig@student.example.edu,2023-09-01,8
+S116,Iqra Hussain,M,CS,Spring 2024,3.0,83,iqra.hussain@student.example.edu,2023-09-05,12
+S117,Daniyal Ali,M,DS,Spring 2024,1.99,88,daniyal.ali@student.example.edu,2023-09-09,17
+S118,Faraz Butt,F,DS,fall2023,2.25,81,faraz.butt@student.example.edu,"Sept 7, 2023",20
+S119,Parveen Siddiqui,M,AI,Fall 2023,,85,parveen.siddiqui@student.example.edu,07/09/2023,26
+S120,Parveen Ali,M,AI,Spring 2024,2.85,85,parveen.ali@student.example.edu,"Sept 1, 2023",24
+S121,Daniyal Siddiqui,F,DS,Fall 2023,,83,daniyal.siddiqui@student.example.edu,2023-09-04,22
+S122,Usman Shah,M,CS,Fall 2024,3.56,78,usman.shah@student.example.edu,2023-09-06,18
+S123,Parveen Shah,F,DS,Fall 2023,3.18,84,parveen.shah@student.example.edu,07/09/2023,27
+S124,Usman Malik,M,DS,Fall 2023,2.52,100,usman.malik@student.example.edu,"Sept 8, 2023",21
+S125,Kiran Ali,F, Artificial Intelligence,Spring 2024,3.1,,kiran.ali@student.example.edu,"Sept 6, 2023",38
+S126,Sara Shah,M,CS,Fall 2023,,75,sara.shah@student.example.edu,"Sept 5, 2023",20
+S127,Omer Javed,M,DS,Spring 2024,2.36,74,omer.javed@student.example.edu,2023-09-03,25
+S128,Maryam Qureshi,M,CS,Fall 2023,3.43,89,maryam.qureshi@student.example.edu,2023-09-05,15
+S128,Maryam Qureshi,M,CS,Fall 2023,3.43,89,maryam.qureshi@student.example.edu,2023-09-05,15
+S129,Tariq Qureshi,M,DS,Fall 2023,3.13,77,tariq.qureshi@student.example.edu,"Sept 7, 2023",
+S130,Ayesha Malik,F,CS,Fall 2024,2.96,100,ayesha.malik@student.example.edu,"Sept 6, 2023",22
+S131,Bilal Khan,F,DS,Fall 2023,3.55,92,bilal.khan@student.example.edu,2023-09-03,25
+S132,Hamza Qureshi,F,CS,Fall 2024,2.56,85,hamza.qureshi@student.example.edu,"Sept 4, 2023",17
+S134,Omer Ali,M,DS,Spring 2024,2.99,86,omer.ali@student.example.edu,"Sept 3, 2023",
+S135,Laila Ansari,F,AI,Fall 2024,4.0,99,,2023-09-05,18
+S136,Junaid Malik,M,DS,Fall 2024,2.62,64,junaid.malik@student.example.edu,"Sept 7, 2023",13
+S137,Hina Khan,F,DS,Fall 2023,3.2,84,,07/09/2023,14
+S138,Faraz Chaudhry,M,CS,Spring 2024,3.07,71,faraz.chaudhry@student.example.edu,"Sept 5, 2023",9
+S139,Tariq Javed,m ,DS,Fall 2024,2.16,68,tariq.javed@student.example.edu,03/09/2023,34
+S140,Hamza Butt,M,AI,Fall 2023,3.26,93,Hamza.Butt@Student.Example.Edu,2023-09-05,24
+S141,Usman Qureshi,M,DS,Fall 2024,2.48,85,usman.qureshi@student.example.edu,"Sept 1, 2023",10
+S142,Usman Baig,F,CS,Spring 2024,2.79,83,usman.baig@student.example.edu,2023-09-06,17
+S143,Sara Ansari,M,AI,Fall 2023,3.06,78,sara.ansari@student.example.edu,2023-09-09,24
+S145,Emaan Ahmed,F,AI,Fall 2023,2.71,,Emaan.Ahmed@Student.Example.Edu,01/09/2023,24
+S146,Parveen Ali,M,AI,Fall 2024,2.8,80,parveen.ali@student.example.edu,2023-09-04,23
+S148,Parveen Hussain,M,DS,Fall 2024,2.38,77,parveen.hussain@student.example.edu,2023-09-07,24
+S149,Hina Siddiqui,M,AI,Spring 2024,3.41,67,hina.siddiqui@student.example.edu,"Sept 4, 2023",19
+S149,Hina Siddiqui,M,AI,Spring 2024,3.41,67,hina.siddiqui@student.example.edu,"Sept 4, 2023",19
+S151,Laila Chaudhry,M,CS,Fall 2024,3.07,73,laila.chaudhry@student.example.edu,2023-09-07,
+S152,Zainab Ahmed,M,CS ,Fall 2023,2.71,96,zainab.ahmed@student.example.edu,2023-09-05,32
+S153,Ahmed Chaudhry,F,AI,Fall 2024,2.68,94,ahmed.chaudhry@student.example.edu,"Sept 9, 2023",5
+S154,Iqra Chaudhry,F,AI,Fall 2023,2.36,96,iqra.chaudhry@student.example.edu,"Sept 4, 2023",12
+S155,Fatima Malik,M,AI,Fall 2024,,70,fatima.malik@student.example.edu,05/09/2023,13
+S156,Sana Baig,M,DS,Spring 2024,2.98,83,,2023-09-02,19
+S157,Ali Chaudhry,F,CS,fall2023,2.54,97,ali.chaudhry@student.example.edu,"Sept 7, 2023",17
+S158,Junaid Ali,M,CS,Spring 2024,3.65,81,junaid.ali@student.example.edu,2023-09-06,21
+S159,Ali Shah,M,DS,Spring 2024,2.84,79,ali.shah@student.example.edu,2023-09-05,
+S160,Qasim Ahmed,F,CS,Fall 2024,2.98,63,qasim.ahmed@student.example.edu,"Sept 5, 2023",16
+S161,Tariq Ali,M,DS,Spring 2024,3.82,70,tariq.ali@student.example.edu,2023-09-05,13
+S162,Daniyal Javed,M,AI,Spring 2024,2.94,80,daniyal.javed@student.example.edu,"Sept 9, 2023",31
+S163,Junaid Ansari,F,DS,Spring 2024,3.56,58,junaid.ansari@student.example.edu,05/09/2023,22
+S164,Bilal Butt,M,DS,Fall 2023,2.21,73,bilal.butt@student.example.edu,2023-09-04,12
+S165,Qasim Khan,M,CS,Fall 2023,3.82,80,qasim.khan@student.example.edu,2023-09-02,31
+S166,Ayesha Javed,F,AI,Fall 2024,3.85,76,,"Sept 4, 2023",21
+S167,Kiran Khan,F,DS,Fall 2024,2.77,87,kiran.khan@student.example.edu,"Sept 3, 2023",10
+S168,Ahmed Ansari,M,AI,Fall 2023,3.31,79,ahmed.ansari@student.example.edu,2023-09-02,18
+S169,Fatima Sheikh,M,AI,Fall 2023,4.0,87,fatima.sheikh@student.example.edu,2023-09-05,15
+S170,Junaid Shah,M,DS,Fall-2024,3.58,87,junaid.shah@student.example.edu,2023-09-04,23
+S171,Emaan Malik,F,CS,Fall 2023,2.52,100,emaan.malik@student.example.edu,2023-09-09,31
+S172,Waqar Ali,M,AI,Spring 2024,3.35,,waqar.ali@student.example.edu,2023-09-09,10
+S172,Waqar Ali,M,AI,Spring 2024,3.35,,waqar.ali@student.example.edu,2023-09-09,10
+S173,Rania Ansari,M,CS,Spring 2024,3.09,88,Rania.Ansari@Student.Example.Edu,07/09/2023,21
+S174,Junaid Sheikh,M,CS,Spring 2024,2.83,80,junaid.sheikh@student.example.edu,"Sept 2, 2023",13
+S175,Waqar Ansari,M,DS,Fall 2023,3.36,87,waqar.ansari@student.example.edu,2023-09-02,99
+S176,Uzma Sheikh,M,DS,Spring 2024,3.26,,uzma.sheikh@student.example.edu,"Sept 1, 2023",19
+S177,Daniyal Shah,M,CS,Spring 2024,4.0,92,daniyal.shah@student.example.edu,2023-09-04,37
+S178,Waqar Raza,F,CS,Fall 2023,2.99,100,waqar.raza@student.example.edu,"Sept 5, 2023",25
+S179,Emaan Siddiqui,M,DS,Fall 2024,2.41,82,Emaan.Siddiqui@Student.Example.Edu,04/09/2023,11
+S180,Iqra Ansari,M,DS,Spring 2024,3.73,68,iqra.ansari@student.example.edu,2023-09-02,12
+S181,Mubashir Sheikh,F,AI,Spring 2024,4.0,92,mubashir.sheikh@student.example.edu,2023-09-02,18
+S182,Laila Ali,F,CS,Fall 2024,1.95,81,Laila.Ali@Student.Example.Edu,2023-09-02,11
+S183,Qasim Baig,M,CS,Fall 2024,2.17,93,qasim.baig@student.example.edu,2023-09-09,28
+S184,Emaan Siddiqui,M,CS,Spring 2024,2.83,74,emaan.siddiqui@student.example.edu,2023-09-06,5
+S185,Iqra Javed,M,DS,Spring 2024,2.42,84,iqra.javed@student.example.edu,"Sept 2, 2023",99
+S186,Iqra Chaudhry,F,CS,Spring 2024,2.78,88,iqra.chaudhry@student.example.edu,2023-09-07,24
+S187,Hina Javed,m ,DS,Fall 2024,2.71,84,hina.javed@student.example.edu,"Sept 6, 2023",22
+S188,Nimra Shah,F,DS,Fall 2024,4.0,63,nimra.shah@student.example.edu,2023-09-01,14
+S189,Maryam Khan,M,DS,Fall 2024,2.7,92,maryam.khan@student.example.edu,2023-09-06,10
+S190,Bilal Khan,F,CS ,Fall 2023,2.65,68,bilal.khan@student.example.edu,01/09/2023,15
+S191,Rania Qureshi,M,ds,Fall 2024,3.01,83,rania.qureshi@student.example.edu,02/09/2023,
+S192,Hina Raza,F,DS,Fall 2023,3.23,87,hina.raza@student.example.edu,"Sept 4, 2023",28
+S193,Ahmed Qureshi,F, Artificial Intelligence,Fall 2024,2.68,76,ahmed.qureshi@student.example.edu,2023-09-01,11
+S194,Daniyal Ali,F,AI,Spring 2024,2.46,89,daniyal.ali@student.example.edu,03/09/2023,19
+S195,Usman Ansari,M,ds,Fall 2024,3.33,86,usman.ansari@student.example.edu,2023-09-02,13
+S196,Fatima Baig,M,DS,Spring 2024,3.89,77,fatima.baig@student.example.edu,2023-09-09,11
+S197,Kiran Siddiqui,F,CS,Fall 2023,4.0,66,kiran.siddiqui@student.example.edu,"Sept 8, 2023",12
+S198,Maryam Hussain,M,AI,Spring 2024,,94,maryam.hussain@student.example.edu,"Sept 6, 2023",13
+S199,Qasim Baig,M,CS,Fall 2024,3.24,70,qasim.baig@student.example.edu,04/09/2023,12
+S200,Rania Qureshi,M,CS,Fall 2024,3.6,83,rania.qureshi@student.example.edu,2023-09-03,22
+SS001,Mubashir Butt,F,CS ,Fall 2024,3.71,84,Mubashir.Butt@Student.Example.Edu,09/09/2023,6
+SS001,Waqar Qureshi,F,AI,Fall 2024,2.62,81,waqar.qureshi@student.example.edu,2023-09-06,24
+SS002,Junaid Javed,M,CS,Fall 2023,3.65,80,junaid.javed@student.example.edu,08/09/2023,8
+SS008,Sana Ahmed,M,AI,Fall 2023,3.6,79,sana.ahmed@student.example.edu,2023-09-09,29
+SS012,Hina Qureshi,F,CS,Spring 2024,2.55,,Hina.Qureshi@Student.Example.Edu,2023-09-02,15
+SS017,Emaan Ali,m ,CS,Fall 2024,2.72,94,emaan.ali@student.example.edu,2023-09-09,40
+SS029,Mubashir Ansari,M,AI,Fall 2024,2.6,61,mubashir.ansari@student.example.edu,2023-09-07,23
+SS050,Parveen Qureshi,M,DS,Fall 2024,2.36,89,Parveen.Qureshi@Student.Example.Edu,2023-09-04,
+SS117,Faraz Ahmed,M,AI,Spring 2024,3.86,95,faraz.ahmed@student.example.edu,06/09/2023,20
+SS129,Daniyal Hussain,M,CS,Fall 2024,3.61,79,daniyal.hussain@student.example.edu,2023-09-03,14
+SS135,Sara Raza,F,DS,Spring 2024,3.42,72,sara.raza@student.example.edu,08/09/2023,28

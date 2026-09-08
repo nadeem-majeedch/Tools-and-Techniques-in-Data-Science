@@ -168,9 +168,9 @@ In `notebooks/week-05/session-09-cleaning-1.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 2** (due Session 10): `labs/lab-02/` — Pandas data cleaning on a messy
-dataset: detect, decide, drop/fill, dedupe, fix types, verify. Starter:
-`labs/lab-02/lab-02-starter.ipynb`. Submit via Git.
+**Lab 09** (`labs/lab-09-data-cleaning-1.md`) — due before Session 10: data
+cleaning I — missing values, duplicates, dtype conversion: detect, decide,
+drop/fill, dedupe, fix types, verify. Submit via Git.
 
 ## 10. Common mistakes
 

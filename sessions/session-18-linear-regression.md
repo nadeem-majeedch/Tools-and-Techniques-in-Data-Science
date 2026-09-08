@@ -178,8 +178,8 @@ In `notebooks/week-09/session-18-linear-regression.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 5 is due today** (`labs/lab-05/`): linear regression — fit, evaluate with
-MAE/RMSE/R², compare vs. baseline, residual check, checkpoint questions. Push.
+**Lab 18 is due today** (`labs/lab-18-linear-regression.md`): linear regression
+— fit, evaluate with MAE/RMSE/R², compare vs. baseline, residual check. Push.
 
 ## 10. Common mistakes
 
@@ -204,7 +204,7 @@ MAE/RMSE/R², compare vs. baseline, residual check, checkpoint questions. Push.
 
 CLO-2: linear regression is the first "basic machine learning technique" applied
 to a data-driven problem — the fit/evaluate/interpet pattern is repeated for
-every model in Module B and graded in Assignment 2 and the project.
+every model in Module B and graded in Labs 17–22, the final exam, and the project.
 
 ## 13. Suggested homework
 

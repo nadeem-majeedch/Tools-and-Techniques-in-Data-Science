@@ -227,7 +227,7 @@ Build a **privacy-aware review pipeline** for your project data:
    review and one follow-up analysis.
 3. Verify the model's suggestions against the data yourself.
 4. Write a markdown note: data policy — summaries only, nothing leaves the
-   machine (Ollama, local).""""),
+   machine (Ollama, local)."""),
     ("code", """# your code here
 """),
     ("code", """# Solution — structure with penguins; adapt to your data

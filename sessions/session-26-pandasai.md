@@ -184,10 +184,10 @@ In `notebooks/week-13/session-26-pandasai.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 8 is due today** (`labs/lab-08/`): PandasAI — set up, answer 5 questions
-on `penguins`/`tips`, audit each (generated code + hand verification), and
-write the AI log with a reflection on what you'd trust and why. **Project
-proposal also due today** (`../projects/`). Push both.
+**Lab 26 is due today** (`labs/lab-26-pandasai.md`): PandasAI — set up,
+answer 4 questions on `tips`, audit each against pandas, and write the report
+card with a reflection on what you'd trust and why. **Project proposal also
+due today** (`../projects/`). Push both.
 
 ## 10. Common mistakes
 
@@ -212,8 +212,8 @@ proposal also due today** (`../projects/`). Push both.
 
 CLO-3: PandasAI is the first full "LLM-powered data workflow" tool — using it
 correctly (audit + log) is exactly "develop simple AI-assisted data science
-workflows … considering reproducibility". Feeds Lab 8, Assignment 3, and the
-project's AI component.
+workflows … considering reproducibility". Feeds Lab 26 and the project's AI
+component.
 
 ## 13. Suggested homework
 

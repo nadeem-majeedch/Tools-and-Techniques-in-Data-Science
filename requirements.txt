@@ -12,6 +12,9 @@ ipykernel
 # Data acquisition
 requests>=2.31
 
+# Interactive apps (Streamlit module + Assignment 2 + Final Project)
+streamlit>=1.30
+
 # AI-assisted workflows (CLO-3)
 pandasai>=2.0
 ollama>=0.3

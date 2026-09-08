@@ -191,7 +191,7 @@ def mock_one(messages, tools):
         {"function": {"name": "biggest_tip", "arguments": {}}}]}}
 
 msgs = [{"role": "user", "content": "What is the biggest tip?"}]
-msg = mock_one(msgs, tools)["message"]
+msg = mock_one(msgs, TOOLS)["message"]
 call = msg["tool_calls"][0]["function"]
 result = biggest_tip(tips)
 print("tool result:")
@@ -278,7 +278,7 @@ def mock_never_answers(messages, tools):
 msgs = [{"role": "user", "content": "go"}]
 steps = 0
 for step in range(6):           # max_steps = 6
-    msg = mock_never_answers(msgs, tools)["message"]
+    msg = mock_never_answers(msgs, TOOLS)["message"]
     if not msg.get("tool_calls"):
         break
     call = msg["tool_calls"][0]["function"]

@@ -146,10 +146,10 @@ Work in `notebooks/week-03/session-05-numpy-1.ipynb`:
 
 ## 9. Lab exercise
 
-Lab 1 (due **Session 6**): `labs/lab-01/` — NumPy arrays: create, inspect,
-slice, and summarize arrays, plus checkpoint questions. Starter notebook:
-`labs/lab-01/lab-01-starter.ipynb`. **First submission through Git** — commit and
-push before the next session.
+**Lab 05** (`labs/lab-05-numpy-part-1.md`) — due before Session 6: NumPy
+arrays — create, inspect, slice, and summarize arrays, plus checkpoint
+questions. **First submission through Git** — commit and push before the next
+session.
 
 ## 10. Common mistakes
 

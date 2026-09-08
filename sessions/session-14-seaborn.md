@@ -166,9 +166,9 @@ In `notebooks/week-07/session-14-seaborn.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 4 is due today** (`labs/lab-04/`): visualization — four chart types,
-customized and saved, plus checkpoint questions on what the charts show.
-Commit and push.
+**Lab 14 is due today** (`labs/lab-14-seaborn.md`): visualization — seaborn
+statistical plots (relplot, boxplot, heatmap, pairplot), customized and saved,
+plus checkpoint questions on what the charts show. Commit and push.
 
 ## 10. Common mistakes
 

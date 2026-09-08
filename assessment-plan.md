@@ -4,9 +4,9 @@
 
 | Component | Count | Weight* | When | CLOs |
 |---|---|---|---|---|
-| Labs | 10 | 25% | Weekly, due before the next session | 1, 2, 3 |
-| Quizzes | 3 | 10% | W4 S7, W7 S13, W12 S23 (session start, ~15 min) | 1, 2, 3 |
-| Assignments | 3 | 15% | See schedule | 1, 2, 3 |
+| Labs | 32 | 25% | Weekly, due before the next session | 1, 2, 3 |
+| Quizzes | 2 | 10% | W8 S15, W15 S29 (session start, ~25 min) | 1, 2, 3 |
+| Assignments | 2 | 15% | See schedule | 1, 3 |
 | Midterm exam | 1 | 15% | W8 S16 | 1, 2 |
 | Final exam | 1 | 15% | W16 S32 | 1, 2, 3 |
 | Final project | 1 | 20% | Kickoff W12, presentations W16 | 1, 2, 3 |
@@ -17,27 +17,32 @@ summative assessment; instructors should confirm them against program policy.
 
 ## 2. Component details
 
-### Labs (10 × 2.5% = 25%)
+### Labs (32 × ~0.8% = 25%)
 Hands-on exercises completed largely in class and finished at home. Each lab has
 stated objectives, a starter notebook, tasks, and 2–3 checkpoint questions.
 Graded for correctness of the notebook, code quality, and answers to checkpoint
 questions. See `labs/`.
 
-### Quizzes (3 × ~3.3% = 10%)
-Short, closed-notes, in-class quizzes (multiple choice + short code reading)
-covering the preceding module: Python/NumPy, Pandas/cleaning, ML. See `quizzes/`.
+### Quizzes (2 × 5% = 10%)
+Short, closed-notes, in-class quizzes (multiple choice, code tracing,
+debugging, short answer, and scenario items) covering the preceding weeks:
+Quiz 1 = Weeks 1–7, Quiz 2 = Weeks 8–14. Full question banks with keys in
+`quizzes/` (quiz-1.md, quiz-2.md).
 
-### Assignments (3 × 5% = 15%)
+### Assignments (2 × 7.5% = 15%)
 Larger individual tasks, submitted via a private GitHub repository (or as
 specified by the instructor):
 
-1. **Assignment 1 — Cleaning & manipulation (CLO-1):** acquire, clean, and
-   reshape a provided dataset; answer analysis questions with Pandas.
-2. **Assignment 2 — ML modeling (CLO-2):** train and evaluate regression and
-   classification models on a given problem; justify choices.
-3. **Assignment 3 — AI-assisted workflow (CLO-3):** build a small AI-assisted
-   analysis (PandasAI and/or Ollama) and/or an n8n automation; include a short
-   written reflection on reproducibility, ethics, and responsible AI use.
+1. **Assignment 1 — Data cleaning & EDA (CLO-1):** clean a provided messy
+   dataset with a documented cleaning log, run a structured EDA, and write
+   evidence-backed findings. See `assignments/assignment-01-data-cleaning-eda/`.
+2. **Assignment 2 — API + data acquisition + Streamlit app (CLO-1, CLO-3):**
+   fetch data from an API/public dataset, clean and explore it, and ship an
+   interactive Streamlit application with user controls, documented in a README
+   and committed to GitHub. See `assignments/assignment-02-api-streamlit-app/`.
+
+Machine-learning modeling is assessed through Labs 17–22, Quiz 2, the final
+exam, and the final project's modeling component.
 
 ### Midterm exam (15%)
 Written portion (concepts, code reading) + practical notebook task (CLO-1 with

@@ -115,15 +115,15 @@ variation: more files, more commits, a remote.
 ## 7. Practical Data Science example
 
 ```bash
-# A realistic submission workflow for Lab 1 (due Session 6)
+# A realistic submission workflow for Lab 04 (due before Session 5)
 cd ~/data-science-course
 
 # 1. Work on the lab notebook, then review what changed
 git status
-git diff labs/lab-01/lab-01-starter.ipynb   # skim the diff
+git diff labs/lab-04-git-and-github.md   # skim the diff
 
 # 2. Stage only the lab files (avoid committing unrelated work)
-git add labs/lab-01/
+git add labs/lab-04-git-and-github.md
 git commit -m "feat: finish lab-01 numpy exercises"
 
 # 3. Publish to GitHub

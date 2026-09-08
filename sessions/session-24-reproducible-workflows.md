@@ -180,7 +180,8 @@ project-name/
 
 No lab — this is a **project workshop** session. Milestone: your project repo
 now has the reproducible layout, seeds set in every notebook, and a
-"How to reproduce" README draft. Assignment 2 remains due Session 25.
+"How to reproduce" README draft. Assignment 2 (API + Streamlit app) is due
+Session 30 — today's reproducibility checklist applies directly to it.
 
 ## 10. Common mistakes
 

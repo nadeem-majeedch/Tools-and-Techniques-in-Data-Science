@@ -140,7 +140,7 @@ Project-relevant automation (build together in class):
 > **Reproducibility:** export the workflow JSON into `project/automations/` and
 > document credentials are stored in n8n (not in the JSON).
 
-This is Assignment 3's automation option in miniature — and a genuinely useful
+This is the course's automation track in miniature — and a genuinely useful
 artifact for the final project's AI-assisted component.
 
 ## 8. In-class activity (50 min)
@@ -156,10 +156,13 @@ artifact for the final project's AI-assisted component.
 
 ## 9. Lab exercise
 
-**Lab 10** (due Session 30): `labs/lab-10/` — n8n automation + ethics
-reflection: build the weather (or equivalent) workflow, export the JSON to the
-repo, and write the reflection (what did automation save? what could go wrong?
-how do you keep it trustworthy?). Push.
+**Quiz 2 at session start** — Weeks 8–14 (EDA, ML, LLM tooling); question bank
+with key in `../quizzes/quiz-2.md`.
+
+**Lab 29** (`../labs/lab-29-n8n-workflows.md`) — due before Session 30: build
+the weather-collector pipeline in Python (idempotent append), design the n8n
+workflow, export the JSON to the repo, and write the reflection (what did
+automation save? what could go wrong? how do you keep it trustworthy?). Push.
 
 ## 10. Common mistakes
 
@@ -189,7 +192,7 @@ workflow JSON extends Session 24's reproducibility to automation.
 
 ## 13. Suggested homework
 
-- Finish Lab 10 and push (due Session 30, together with Assignment 3).
+- Finish Lab 29 and push (due Session 30, together with Assignment 2).
 - Practice: extend your weather workflow — add a Code node computing the 7-day average and a notification when today's temp is >2σ from the mean.
 - Read: n8n docs (docs.n8n.io) — "Introduction to workflows" and "Triggers".
-- Preview: Session 30 closes the course's substance — ethics & responsible AI, with the final reflection you'll write for Assignment 3 and the project.
+- Preview: Session 30 closes the course's substance — ethics & responsible AI, with the final reflection you'll write for the project.

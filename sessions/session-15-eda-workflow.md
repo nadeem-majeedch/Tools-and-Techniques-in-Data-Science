@@ -158,7 +158,11 @@ The **EDA case study** — each student runs the recipe on **their own dataset**
 
 ## 9. Lab exercise
 
-**Assignment 1 is due today** (`../assignments/assignment-01`): Pandas cleaning +
+**Quiz 1 at session start** — Weeks 1–7 (Python, NumPy, Pandas, cleaning, APIs,
+combining, visualization); question bank with key in `../quizzes/quiz-1.md`.
+
+**Assignment 1 is due today** (`../assignments/assignment-01-data-cleaning-eda/`):
+Pandas cleaning +
 manipulation on the provided dataset — clean, reshape, analyze, and answer
 questions with evidence. Push to your repo. (No new lab this session; the case
 study above is the graded-by-participation work.)

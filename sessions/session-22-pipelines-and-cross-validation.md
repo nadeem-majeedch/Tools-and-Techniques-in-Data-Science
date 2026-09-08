@@ -68,8 +68,8 @@ tune with CV on train; test is the final, single check.
 an evidence-based answer: the one with the highest mean (or best trade-off of
 mean vs. stability) — not the one that flashed 0.99 on a lucky split. Also
 consider interpretability (tree > k-NN > deep models) when scores are close.
-This decision procedure — baseline, CV comparison, final test — is Assignment 2
-in a nutshell.
+This decision procedure — baseline, CV comparison, final test — is the
+backbone of Labs 21–22 and the project's modeling section.
 
 ## 4. Important terminology
 
@@ -193,8 +193,9 @@ In `notebooks/week-11/session-22-pipelines-cv.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 7 is due today** (`labs/lab-07/`): clustering & pipelines — k-means elbow
-+ cluster validation, and a scaler→k-NN pipeline with CV comparison. Push.
+**Lab 22 is due today** (`labs/lab-22-pipelines-and-cross-validation.md`):
+pipelines & cross-validation — scaler→model pipelines with CV comparison.
+Push.
 
 ## 10. Common mistakes
 
@@ -218,13 +219,13 @@ In `notebooks/week-11/session-22-pipelines-cv.ipynb`:
 ## 12. CLO mapping
 
 CLO-2: pipelines + CV are the "appropriate data science tools" for honest model
-selection — the culminating skill of Module B and the backbone of Assignment 2
-and the final project's modeling section. Reproducible pipelines also hand off
+selection — the culminating skill of Module B and the backbone of the final
+project's modeling section. Reproducible pipelines also hand off
 directly to CLO-3's reproducibility requirement (Sessions 24, 30).
 
 ## 13. Suggested homework
 
 - Commit the activity notebook.
-- Start **Assignment 2** (released this session, due Session 25): regression + classification + clustering with CV and baseline comparison — see `../assignments/assignment-02`.
+- Start the **project proposal draft** (due Session 26): your modeling plan (regression or classification with CV and baseline comparison) goes into it.
 - Read: scikit-learn docs — "Pipelines and composite estimators" (the intro).
 - Preview: the **final project kickoff (Session 23)** — bring two candidate questions and datasets; you'll pick one and write the proposal.

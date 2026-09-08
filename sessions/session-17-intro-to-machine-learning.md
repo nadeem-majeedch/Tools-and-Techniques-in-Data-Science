@@ -63,7 +63,7 @@ score(model)                    # 4. evaluate
 **The baseline discipline.** Before any model, compute the trivial prediction:
 for regression, always predict the mean; for classification, always predict the
 most common class. A model that can't beat its baseline adds nothing. This habit
-keeps beginners honest and is a rubric item on Assignment 2.
+keeps beginners honest and is graded in Labs 17–22, the final exam, and the project.
 
 **When NOT to use ML.** If the rule is simple and stable, write the rule. If you
 need an explanation a regulator must audit, prefer interpretable models. If the
@@ -176,9 +176,9 @@ In `notebooks/week-09/session-17-intro-to-ml.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 5** (due Session 18): `labs/lab-05/` — linear regression & evaluation:
-split, fit, predict, compare with baseline, checkpoint questions. Starter:
-`labs/lab-05/lab-05-starter.ipynb`.
+**Lab 17** (`labs/lab-17-intro-to-machine-learning.md`) — due before Session
+18: intro to ML — split, fit, predict, evaluate, compare with baseline,
+checkpoint questions.
 
 ## 10. Common mistakes
 
@@ -203,7 +203,7 @@ split, fit, predict, compare with baseline, checkpoint questions. Starter:
 
 CLO-2: this session defines the entire Module B learning problem (tools +
 basic ML techniques). The fit/predict/evaluate pattern and baseline discipline
-are reused in every later session and in Assignment 2 and the project's
+are reused in every later session and in the project's
 modeling component.
 
 ## 13. Suggested homework

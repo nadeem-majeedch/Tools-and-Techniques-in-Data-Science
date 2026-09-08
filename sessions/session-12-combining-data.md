@@ -161,10 +161,10 @@ In `notebooks/week-06/session-12-combining-data.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 3 is due today** (`labs/lab-03/`): data acquisition & combining — fetch an
-API dataset, load a CSV, combine them with `merge` on a shared key, and answer
-checkpoint questions. **Assignment 1 released** (due Session 15): cleaning +
-manipulation with Pandas — see `../assignments/assignment-01`.
+**Lab 12 is due today** (`labs/lab-12-combining-data.md`): combining data —
+`concat` and `merge` on a shared key, plus checkpoint questions. **Assignment
+1 released** (due Session 15): cleaning + manipulation with Pandas — see
+`../assignments/assignment-01-data-cleaning-eda/`.
 
 ## 10. Common mistakes
 

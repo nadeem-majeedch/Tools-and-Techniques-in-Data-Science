@@ -68,8 +68,8 @@ tools make it *easier* to produce fluent, confident, wrong content — your
 verification protocol (Session 25) is an ethical practice, not just a quality
 practice.
 
-**Writing the reflection (deliverable).** Structure for Assignment 3 and the
-project's reflection:
+**Writing the reflection (deliverable).** Structure for the project's
+reflection (and reuse the disclosure template in your Assignment 2 README):
 1. **Data:** source, license, who's represented/missing (bias check).
 2. **Decisions:** 2–3 cleaning/model choices and their rationale.
 3. **AI use:** what AI assisted, how it was verified, what was disclosed (AI log).
@@ -170,9 +170,12 @@ A worked case study for discussion (write on the board, then debrief):
 
 ## 9. Lab exercise
 
-**Lab 10 is due today** (`labs/lab-10/`): n8n automation + ethics reflection —
-push the workflow JSON and the reflection. **Assignment 3 also due today**
-(AI-assisted workflow + ethics/reproducibility reflection, `../assignments/assignment-03`). These are the last graded deliverables before presentations.
+**Lab 30 is due today** (`labs/lab-30-ethics-and-responsible-ai.md`): ethics &
+responsible AI — group bias audit, data sheet, AI disclosure; **Lab 29's n8n
+pipeline** (`labs/lab-29-n8n-workflows.md`) also lands here. **Assignment 2
+also due today** (API + Streamlit app,
+`../assignments/assignment-02-api-streamlit-app/`). These are the last graded
+deliverables before presentations.
 
 ## 10. Common mistakes
 
@@ -198,12 +201,12 @@ push the workflow JSON and the reflection. **Assignment 3 also due today**
 CLO-3: ethics and responsible AI use are the explicit final requirements of
 CLO-3. This session converts them from slogans into practices — the
 representation audit, the privacy rule, the disclosure/verification protocol,
-and the written reflection — assessed in Lab 10, Assignment 3, and the final
-project.
+and the written reflection — assessed in Lab 30, Assignment 2's documentation,
+and the final project.
 
 ## 13. Suggested homework
 
-- Finish Lab 10 + Assignment 3 and push before the deadline.
+- Finish Lab 30 + Assignment 2 and push before the deadline.
 - Write the full ethics section of your project reflection using the five-part structure.
 - Read: one article on a real-world AI bias case (bring one link to share at presentations).
 - Prepare: Session 31 — presentations begin. Rehearse your 10-minute deck, and re-read the rubric in `../assessment-plan.md`.

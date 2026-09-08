@@ -172,9 +172,9 @@ In `notebooks/week-07/session-13-matplotlib.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 4** (due Session 14): `labs/lab-04/` — visualization: create the four chart
-types on `tips`/`flights`, customize them, and answer checkpoint questions about
-what each chart reveals. **Quiz 2 today** (Pandas + cleaning, Sessions 7–12).
+**Lab 13** (`../labs/lab-13-matplotlib.md`) — due before Session 14: build the
+2×2 dashboard figure on `tips`, label every axis, and save it at 150 dpi.
+(Quiz 2 runs later: **Session 29**, covering Weeks 8–14.)
 
 ## 10. Common mistakes
 

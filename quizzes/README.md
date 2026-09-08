@@ -1,21 +1,22 @@
 # Quizzes
 
-Three short, in-class quizzes (~15 minutes, session start) covering the preceding
-module. Each quiz has a `questions` file and an `answers` file for the instructor.
+Two short, in-class quizzes (~25 minutes, session start) covering the
+preceding weeks. Each quiz file is a complete question bank with an embedded
+answer key (every item tagged CLO, Bloom's level, and difficulty). The
+midterm and final exam banks live in `../exams/`.
 
-| Quiz | Session | Covers |
-|---|---|---|
-| `quiz-01` | W4 S7 | Python refresher + NumPy |
-| `quiz-02` | W7 S13 | Pandas, data cleaning, acquisition |
-| `quiz-03` | W12 S23 | scikit-learn, regression, classification, clustering |
+| Quiz | Administered | Covers | CLOs |
+|---|---|---|---|
+| `quiz-1.md` | W8 S15 (start) | Weeks 1–7: Python, Jupyter, Git/GitHub, NumPy, Pandas, data cleaning, acquisition & combining, visualization | CLO-1 |
+| `quiz-2.md` | W15 S29 (start) | Weeks 8–14: EDA, intro ML, regression, classification, clustering, pipelines & CV, reproducibility, LLMs, PandasAI, Ollama, tool calling & agents, Streamlit | CLO-2, CLO-3 |
 
 ## Conventions
 
-- `quiz-0X/quiz-0X-questions.md` — closed-notes, ~10 items: multiple choice, short
-  answer, and short code-reading questions.
-- `quiz-0X/quiz-0X-answers.md` — answer key with brief explanations (instructor only).
-- Keep questions to material explicitly covered in class; reuse notebook examples
-  with slight variations.
-
-The midterm and final exams are described in `../assessment-plan.md`; exam papers
-are not stored in this folder.
+- Closed notes; ~25 minutes; questions reuse course examples with
+  variations (application over memorization).
+- Question types: MCQ, code tracing, debugging, short answer, conceptual,
+  scenario/problem-solving, and short practical coding items.
+- `**Answer:**`/`**Key:**` lines are the instructor key — strip them to
+  produce the student paper.
+- Using AI tools on quizzes is against the course AI-use policy (see
+  `../assessment-plan.md`).

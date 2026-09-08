@@ -210,6 +210,7 @@ from sklearn.metrics import mean_absolute_error
 
 for cols in [["total_bill"], ["total_bill", "size"]]:
     X = tips[cols]
+    y = tips["tip"]    # re-bind y: the previous cell left it as iris (150 rows)
     Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.2, random_state=42)
     m = LinearRegression().fit(Xtr, ytr)
     mae = mean_absolute_error(yte, m.predict(Xte))

@@ -193,9 +193,8 @@ In `notebooks/week-10/session-20-classification-2.ipynb`:
 
 ## 9. Lab exercise
 
-**Lab 6 is due today** (`labs/lab-06/`): classification — k-NN + logistic
-regression + one tree, confusion matrices, k/depth sweeps, checkpoint questions.
-Push before deadline.
+**Lab 20 is due today** (`labs/lab-20-classification-2.md`): classification II
+— decision trees, depth sweeps, overfitting check. Push before deadline.
 
 ## 10. Common mistakes
 
@@ -221,7 +220,7 @@ Push before deadline.
 CLO-2: decision trees complete the "basic classification techniques" set, and
 overfitting + hyperparameters are the core *analysis* skill of CLO-2 ("apply
 appropriate tools and techniques to solve data-driven problems" — choosing
-regularization IS the appropriate-tool skill). Feeds Assignment 2 and Session 22's pipelines.
+regularization IS the appropriate-tool skill). Feeds the project's modeling component and Session 22's pipelines.
 
 ## 13. Suggested homework
 

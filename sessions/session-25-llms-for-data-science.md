@@ -177,9 +177,9 @@ In `notebooks/week-13/session-25-llms.ipynb`:
 
 ## 9. Lab exercise
 
-No lab this session. **Assignment 2 is due today** — push before the deadline.
-From here: Lab 8 (PandasAI, Session 26), Lab 9 (Ollama, Session 27), Lab 10
-(n8n + ethics, Session 30).
+No lab this session.
+From here: Lab 26 (PandasAI), Lab 27 (Ollama), Lab 28 (tool calling &
+agents), Lab 29 (n8n), Lab 30 (ethics).
 
 ## 10. Common mistakes
 
@@ -209,7 +209,7 @@ session and in the project's AI component and reflection.
 
 ## 13. Suggested homework
 
-- Apply the verification protocol to one snippet in your Assignment 2 work (even if not AI-generated, practice the four steps).
+- Apply the verification protocol to one snippet of your Assignment 2 pipeline code (even if not AI-generated, practice the four steps).
 - Practice: write three good prompts for tasks in your own project (code, explanation, plan review).
 - Read: the course AI-use policy in `../assessment-plan.md` again — know it cold.
 - Preview: `pip show pandasai` and check the version — Session 26 turns natural language into pandas queries with PandasAI.
