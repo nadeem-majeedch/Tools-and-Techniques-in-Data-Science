@@ -67,14 +67,18 @@ component + ethics/reproducibility reflection).
 |---|---|---|---|
 | Labs 1–16 | ✓ | | |
 | Labs 17–22 | | ✓ | |
-| Labs 24–32 | | | ✓ |
-| Quiz 1 | ✓ | | |
+| Labs 23 & 31–32 (project & presentations) | ✓ | ✓ | ✓ |
+| Labs 24–30 | | | ✓ |
+| Quiz 1 | ✓ | | ✓* |
 | Quiz 2 | | ✓ | ✓ |
 | Assignment 1 | ✓ | | |
 | Assignment 2 | ✓ | | ✓ |
-| Midterm exam | ✓ | ✓ | |
+| Midterm exam | ✓ | ✓ | ✓* |
 | Final exam | ✓ | ✓ | ✓ |
 | Final project | ✓ | ✓ | ✓ |
+
+\* A small subset of items (Git/reproducibility, ethics-adjacent scenarios) is
+tagged CLO-3 — see the per-file CLO spread notes in `quizzes/` and `exams/`.
 
 ## Alignment note
 

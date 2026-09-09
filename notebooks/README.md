@@ -1,19 +1,18 @@
-# Notebooks
+# Notebooks — your in-class workspace
 
-In-class notebooks for every session, organized by week and session. Students
-follow along during the hands-on block (~50 min per session).
+This folder is where **you** build the notebooks you create during class
+(Sessions 2–4 and the hands-on blocks). It is *your* workspace, kept separate
+from the course-provided, pre-executed notebooks in
+[`../course-notebooks/`](../course-notebooks/README.md).
 
 ## Conventions
 
-- Path: `week-XX/session-YY-descriptive-name.ipynb`, e.g.
-  `week-04/session-08-pandas-io.ipynb`.
-- Session 16 (midterm) and session 32 (final exam) do not have notebooks.
-- Notebook style rules:
-  - One idea per cell; keep cells small and readable.
-  - Use Markdown cells for section headings and brief explanations.
-  - Set a fixed random seed wherever randomness is used.
-  - Every notebook must **Run All** cleanly before being committed.
-- Starter (partially filled) versions live in `labs/` for lab sessions; the
-  completed versions are presented in class.
+- Create one subfolder per week: `notebooks/week-01/`, `notebooks/week-02/`, …
+- Name files after the session, e.g. `notebooks/week-01/session-02-python-refresher.ipynb`.
+- Notebooks you build here are for practice; follow **Restart & Run All**
+  before you save or share them.
+- The folder is git-ignored by default — commit a notebook only if a deliverable
+  asks you to (labs/assignments specify their own submission paths).
 
-*Work in progress:* notebooks will be added week by week.
+Course-provided (executed) notebooks — the ones you follow along with and
+download from the website — live in [`../course-notebooks/`](../course-notebooks/README.md).

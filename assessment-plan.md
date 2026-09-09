@@ -4,32 +4,40 @@
 
 | Component | Count | Weight* | When | CLOs |
 |---|---|---|---|---|
-| Labs | 32 | 25% | Weekly, due before the next session | 1, 2, 3 |
-| Quizzes | 2 | 10% | W8 S15, W15 S29 (session start, ~25 min) | 1, 2, 3 |
-| Assignments | 2 | 15% | See schedule | 1, 3 |
-| Midterm exam | 1 | 15% | W8 S16 | 1, 2 |
-| Final exam | 1 | 15% | W16 S32 | 1, 2, 3 |
-| Final project | 1 | 20% | Kickoff W12, presentations W16 | 1, 2, 3 |
+| Labs | 32 | 10% | Weekly, due before the next session | 1, 2, 3 |
+| Quizzes | 2 | 5% | W8 S15, W15 S29 (session start, ~25 min) | 1, 2, 3 |
+| Assignments | 2 | 10% | See schedule | 1, 3 |
+| Midterm exam | 1 | 35% | W8 S16 | 1, 2 |
+| Final exam | 1 | 25% | W16 S32 | 1, 2, 3 |
+| Final project | 1 | 15% | Kickoff W12, presentations W16 | 1, 2, 3 |
 | **Total** | | **100%** | | |
 
-\* Weights are a **proposal** intended to balance continuous practice with
-summative assessment; instructors should confirm them against program policy.
+\* The component weights roll up to the **institutional 25 : 35 : 40
+distribution** (continuous : midterm : final) required by the program. The
+sub-split inside each bucket is a proposal and may be adjusted — the bucket
+totals are fixed:
+
+| Institutional component | Weight | Made up of |
+|---|---|---|
+| **Continuous** | **25%** | Labs 10% · Quizzes 5% · Assignments 10% |
+| **Midterm** | **35%** | Midterm exam 35% |
+| **Final** | **40%** | Final exam 25% · Final project 15% |
 
 ## 2. Component details
 
-### Labs (32 × ~0.8% = 25%)
+### Labs (32 × ~0.3% = 10%)
 Hands-on exercises completed largely in class and finished at home. Each lab has
 stated objectives, a starter notebook, tasks, and 2–3 checkpoint questions.
 Graded for correctness of the notebook, code quality, and answers to checkpoint
 questions. See `labs/`.
 
-### Quizzes (2 × 5% = 10%)
+### Quizzes (2 × 2.5% = 5%)
 Short, closed-notes, in-class quizzes (multiple choice, code tracing,
 debugging, short answer, and scenario items) covering the preceding weeks:
 Quiz 1 = Weeks 1–7, Quiz 2 = Weeks 8–14. Full question banks with keys in
 `quizzes/` (quiz-1.md, quiz-2.md).
 
-### Assignments (2 × 7.5% = 15%)
+### Assignments (2 × 5% = 10%)
 Larger individual tasks, submitted via a private GitHub repository (or as
 specified by the instructor):
 
@@ -44,22 +52,25 @@ specified by the instructor):
 Machine-learning modeling is assessed through Labs 17–22, Quiz 2, the final
 exam, and the final project's modeling component.
 
-### Midterm exam (15%)
+### Midterm exam (35%)
 Written portion (concepts, code reading) + practical notebook task (CLO-1 with
 an entry-level CLO-2 task). Open-notes notebook allowed for the practical part
 as specified by the instructor.
 
-### Final exam (15%)
+### Final exam (25%)
 Comprehensive: CLO-1, CLO-2, and CLO-3 concepts, including a short
 AI-ethics/reproducibility section.
 
-### Final project (20%)
+### Final project (15%)
 Team of 2–3 students; end-to-end data science project from a problem statement
 to an analysis with a basic model and an AI-assisted or automated component.
 Deliverables: proposal (W13), GitHub repository, presentation (W16), final
 submission with a reproducibility + ethics reflection. See `projects/`.
 
 ## 3. Rubric sketch
+
+*Internal project rubric — the percentages below are applied to the project's
+15% course weight; they are not course-level weights.*
 
 | Criterion | Weight (project) | Description |
 |---|---|---|

@@ -1,6 +1,7 @@
 # Final Project — Grading Rubric
 
-**Project weight:** 20% of the course grade · **Rubric version:** v1.0
+**Project weight:** 15% of the course grade (within the 40% final
+institutional bucket) · **Rubric version:** v1.1
 
 ## 1. How the project grade is built (100% project grade)
 
@@ -72,4 +73,4 @@ Each criterion is scored on the scale in §3. Weights follow
 | Viva (10) | /10 | | individual |
 | **Total** | **/100** | | |
 
-Rounding to one decimal. Final course contribution = project grade × 20%.
+Rounding to one decimal. Final course contribution = project grade × 15%.

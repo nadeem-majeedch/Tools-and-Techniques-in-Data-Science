@@ -47,7 +47,7 @@ Full definitions and mapping: [CLOs.md](CLOs.md)
 | Block | Time | Activity |
 |---|---|---|
 | Concept & demo | ~25 min | Instructor-led topic introduction with live demos |
-| Hands-on | ~50 min | Guided notebook exercises (see `notebooks/`) |
+| Hands-on | ~50 min | Guided notebook exercises (see `course-notebooks/`) |
 | Wrap-up & checkpoint | ~15 min | Summary, checkpoint questions, preview of next session |
 
 Most sessions pair a short in-class exercise with the weekly lab, which students
@@ -74,14 +74,17 @@ Setup instructions: [resources/setup-guide.md](resources/setup-guide.md)
 
 | Component | Count | Weight* | CLOs assessed |
 |---|---|---|---|
-| Labs | 10 | 25% | 1, 2, 3 |
-| Quizzes | 3 | 10% | 1, 2, 3 |
-| Assignments | 3 | 15% | 1, 2, 3 |
-| Midterm exam | 1 | 15% | 1, 2 |
-| Final exam | 1 | 15% | 1, 2, 3 |
-| Final project | 1 | 20% | 1, 2, 3 |
+| Labs | 32 | 10% | 1, 2, 3 |
+| Quizzes | 2 | 5% | 1, 2, 3 |
+| Assignments | 2 | 10% | 1, 3 |
+| Midterm exam | 1 | 35% | 1, 2 |
+| Final exam | 1 | 25% | 1, 2, 3 |
+| Final project | 1 | 15% | 1, 2, 3 |
 
-\* Proposed weights. Full rubric and policy details: [assessment-plan.md](assessment-plan.md)
+\* Weights roll up to the institutional **25% continuous / 35% midterm / 40%
+final** distribution (continuous = labs + quizzes + assignments; final =
+final exam + project). Full rubric and policy details:
+[assessment-plan.md](assessment-plan.md)
 
 ## 8. Reference materials
 

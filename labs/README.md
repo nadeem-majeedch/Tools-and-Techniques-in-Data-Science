@@ -3,8 +3,9 @@
 Thirty-two practical lab exercises — **one per course session** — that build
 up week by week from beginner to intermediate. Students write substantial
 code themselves; the student version ships **starter code and expected
-outputs, never complete solutions**. Complete worked solutions live in
-[`instructor-solutions/`](instructor-solutions/README.md).
+outputs, never complete solutions**. Complete worked solutions are kept in
+an `instructor-solutions/` folder and are **not published on this website**
+— your instructor distributes them as appropriate.
 
 ## Lab index
 
@@ -32,7 +33,7 @@ outputs, never complete solutions**. Complete worked solutions live in
 | 20 | W10 S20 | 2 | Classification II — decision trees & overfitting | Intermediate |
 | 21 | W11 S21 | 2 | Clustering — k-means & the elbow | Intermediate |
 | 22 | W11 S22 | 2 | Pipelines & cross-validation | Intermediate |
-| 23 | W12 S23 | 2 | Project kickoff — proposal workbook | Intermediate |
+| 23 | W12 S23 | 1, 2, 3 | Project kickoff — proposal workbook | Intermediate |
 | 24 | W12 S24 | 3 | Reproducible workflows | Intermediate |
 | 25 | W13 S25 | 3 | LLMs for data science | Advanced |
 | 26 | W13 S26 | 3 | PandasAI — natural-language queries | Advanced |
@@ -41,7 +42,7 @@ outputs, never complete solutions**. Complete worked solutions live in
 | 29 | W15 S29 | 3 | n8n workflows & idempotency | Advanced |
 | 30 | W15 S30 | 3 | Ethics & responsible AI | Advanced |
 | 31 | W16 S31 | 3 | Project presentations — prep & peer review | Advanced |
-| 32 | W16 S32 | 1+2+3 | Final submission & exam review | Advanced |
+| 32 | W16 S32 | 1, 2, 3 | Final submission & exam review | Advanced |
 
 ## Conventions
 

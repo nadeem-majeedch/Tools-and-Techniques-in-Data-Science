@@ -2,6 +2,11 @@
 
 16 weeks × 2 sessions/week × 90 minutes. Sessions are numbered 1–32.
 Module A: Weeks 1–8 (CLO-1) · Module B: Weeks 9–12 (CLO-2) · Module C: Weeks 13–16 (CLO-3).
+Sessions 23–24 bridge the modules: the project kickoff spans all three CLOs
+and reproducibility (W12 S24) is formally a CLO-3 skill, taught in Week 12 so
+the final project can use it from the start. Streamlit has no dedicated
+lecture slot — it is a self-paced module (`streamlit/`) started in Week 9
+with Assignment 2 and practised through Sessions 28 and 30.
 
 ## Key dates
 
@@ -23,7 +28,7 @@ Module A: Weeks 1–8 (CLO-1) · Module B: Weeks 9–12 (CLO-2) · Module C: Wee
 | Week | Session | Topic | Activities / deliverables |
 |---|---|---|---|
 | 1 | 1 | Course orientation; what is data science; the data science lifecycle; roles and tools | Syllabus walk-through; setup checklist |
-| 1 | 2 | Python refresher: types, control flow, functions, comprehensions; first Jupyter notebook | Notebook: `notebooks/week-01/session-02` |
+| 1 | 2 | Python refresher: types, control flow, functions, comprehensions; first Jupyter notebook | Notebook: `course-notebooks/01-python-for-data-science.ipynb` |
 | 2 | 3 | Jupyter in depth: cells, markdown, kernels, magic commands, notebook hygiene | Notebook exercise; run-all check |
 | 2 | 4 | Git & GitHub: init/clone, add/commit/push, branches, pull requests | Set up personal repo; first commit |
 | 3 | 5 | NumPy I: `ndarray`, creation, indexing, slicing, dtypes | In-class exercises |
@@ -43,7 +48,7 @@ Module A: Weeks 1–8 (CLO-1) · Module B: Weeks 9–12 (CLO-2) · Module C: Wee
 
 | Week | Session | Topic | Activities / deliverables |
 |---|---|---|---|
-| 9 | 17 | Intro to ML; supervised vs. unsupervised; scikit-learn overview; train/test split | **Assignment 2 released** (API + Streamlit app, due W15 S30); Notebook: first model |
+| 9 | 17 | Intro to ML; supervised vs. unsupervised; scikit-learn overview; train/test split | **Assignment 2 released** (API + Streamlit app, due W15 S30); start the self-paced Streamlit module (`streamlit/`); Notebook: first model |
 | 9 | 18 | Linear regression; metrics (MSE, R²) | **Lab 18 due** (regression) |
 | 10 | 19 | Classification I: k-NN and logistic regression; confusion matrix, precision/recall | In-class exercises |
 | 10 | 20 | Classification II: decision trees; overfitting; basic hyperparameter tuning | **Lab 20 due** (classification II) |

@@ -41,30 +41,42 @@ Detailed week-by-week plan: [weekly-schedule.md](weekly-schedule.md)
 
 | Component | Weight* | CLOs |
 |---|---|---|
-| Labs (10) | 25% | 1, 2, 3 |
-| Quizzes (3) | 10% | 1, 2, 3 |
-| Assignments (3) | 15% | 1, 2, 3 |
-| Midterm exam | 15% | 1, 2 |
-| Final exam | 15% | 1, 2, 3 |
-| Final project | 20% | 1, 2, 3 |
+| Labs (32) | 10% | 1, 2, 3 |
+| Quizzes (2) | 5% | 1, 2, 3 |
+| Assignments (2) | 10% | 1, 3 |
+| Midterm exam | 35% | 1, 2 |
+| Final exam | 25% | 1, 2, 3 |
+| Final project | 15% | 1, 2, 3 |
+| **Continuous : Midterm : Final** | **25 : 35 : 40** | |
 
-*Proposed weights — see [assessment-plan.md](assessment-plan.md) for details and rationale.
+*Component weights roll up to the institutional 25% continuous (labs + quizzes +
+assignments) / 35% midterm / 40% final (exam + project) distribution — see
+[assessment-plan.md](assessment-plan.md) for details.
 
 ## Repository structure
 
 ```
 .
 ├── README.md              # This file
+├── index.md               # Website Home page
 ├── course-outline.md      # Full course outline & session format
 ├── CLOs.md                # CLO definitions and assessment mapping
 ├── weekly-schedule.md     # Week-by-week, session-by-session plan
 ├── assessment-plan.md     # Assessments, rubrics, policies
+├── DEPLOYING.md           # How to publish/customize the GitHub Pages website
+├── mkdocs.yml             # Website config (navigation, theme, what to publish)
+├── website-requirements.txt
 ├── requirements.txt       # Python dependencies
+├── .github/workflows/     # GitHub Actions (website build & deploy)
+├── scripts/               # Build helpers (notebooks, website mirror, datasets)
 ├── sessions/              # Per-session teaching material (32 sessions)
 ├── course-notebooks/      # Executed Jupyter notebooks (20, numbered 01–20)
 ├── module-c/              # AI-assisted DS teaching pack (11 topics, CLO-3)
-├── quizzes/               # Quiz bank (quiz-1, quiz-2) with answer keys
-├── exams/                 # Midterm + final exams with keys
+├── streamlit/             # Streamlit module (intro → dashboard project)
+├── guides/                # Student quick guides (Git, PandasAI, LLMs, agents, n8n, FAQ)
+├── assessments/           # Student-facing Quizzes & Exams info pages (no keys)
+├── quizzes/               # Quiz banks (keys — instructor only)
+├── exams/                 # Midterm + final exams (keys — instructor only)
 ├── assignments/           # 2 graded assignments (cleaning+EDA, API+Streamlit)
 ├── labs/                  # 32 lab exercises + instructor solutions
 ├── datasets/              # Dataset registry and small data files
@@ -92,6 +104,19 @@ Detailed week-by-week plan: [weekly-schedule.md](weekly-schedule.md)
    - n8n: https://docs.n8n.io — e.g. `npx n8n` or Docker
 
 Full step-by-step instructions: [resources/setup-guide.md](resources/setup-guide.md)
+
+## Course website
+
+This repository is also a GitHub Pages website built with MkDocs Material
+(search, table of contents, responsive theme, Previous/Next reading order).
+The site is student-facing — quiz/exam answer keys and instructor solutions
+stay in the repo but are excluded from the published build.
+
+- [index.md](index.md) — website Home page (course overview + learning path)
+- [mkdocs.yml](mkdocs.yml) — site configuration (navigation & what to publish)
+- [DEPLOYING.md](DEPLOYING.md) — publishing & customization instructions
+- [scripts/build_site_src.py](scripts/build_site_src.py) — mirrors the repo
+  content into `docs/` for the build (run before `mkdocs serve`/`build`)
 
 ## Who is this repository for
 

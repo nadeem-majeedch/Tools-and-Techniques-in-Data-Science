@@ -1,0 +1,245 @@
+# ============================================================
+# Course website configuration (MkDocs + Material theme)
+# ------------------------------------------------------------
+# The whole repository is the "docs" source: every Markdown file
+# below the repo root becomes a page. The navigation tree below
+# defines the site structure and the Previous | Next reading order.
+#
+# Local preview:
+#   pip install -r website-requirements.txt
+#   mkdocs serve          # then open http://127.0.0.1:8000
+#
+# Publishing:
+#   Push to `main`; the GitHub Actions workflow
+#   (.github/workflows/website.yml) builds and deploys this site.
+#   Set your repo URL in the `site_url` placeholder below once known.
+# ============================================================
+
+site_name: Introduction to Data Science
+site_description: >-
+  BS Data Science (3rd semester) course site — Python, NumPy, Pandas,
+  visualization, machine learning, Streamlit, and AI-assisted workflows.
+# Set these once your repository exists:
+# site_url: https://<your-org>.github.io/<your-repo>/
+# repo_url: https://github.com/<your-org>/<your-repo>
+# edit_uri: edit/main/
+
+# Content lives at the repository root; docs/ is populated from it by
+# `python scripts/build_site_src.py` (run it before serve/build — CI does
+# this automatically in .github/workflows/website.yml).
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/school
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.sections        # group top-level items as labelled sections
+    - navigation.top              # back-to-top button
+    - navigation.footer           # always show the Previous | Next footer
+    - toc.follow                  # highlight the section currently in view
+    - search.suggest
+    - search.highlight
+    - content.code.copy           # copy button on code blocks
+    - content.code.annotate
+
+extra:
+  generator: false               # hide the "Made with Material" note
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.caret
+  - pymdownx.details            # collapsible blocks: ??? note
+  - pymdownx.highlight
+  - pymdownx.mark
+  - pymdownx.superfences        # fenced code blocks + syntax highlighting
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+# ------------------------------------------------------------
+# What NOT to publish. This is a student-facing site: graded
+# assessments with answer keys and instructor solutions stay in
+# the repository but are excluded from the website build.
+# Add or remove paths here to change what is published.
+# ------------------------------------------------------------
+exclude_docs: |
+  # Instructor-only material (safety net: scripts/build_site_src.py already
+  # leaves these out of docs/, this also protects direct `mkdocs build` runs)
+  quizzes/
+  exams/
+  labs/instructor-solutions/
+  streamlit/labs/solutions/
+  assignments/assignment-01-data-cleaning-eda/instructor-solution.md
+  assignments/assignment-01-data-cleaning-eda/instructor-clean.csv
+  assignments/assignment-02-api-streamlit-app/instructor-solution.md
+  projects/final-project/viva-questions.md
+
+# ------------------------------------------------------------
+# Site navigation. Order here == reading order == Previous | Next
+# footer chain at the bottom of every page.
+# ------------------------------------------------------------
+nav:
+  - Home: index.md
+  - Course Overview: course-outline.md
+  - CLOs: CLOs.md
+  - Course Schedule: weekly-schedule.md
+
+  - Weekly Lectures:
+      - Lecture index & format: sessions/README.md
+      - Session 01 · What is Data Science?: sessions/session-01-what-is-data-science.md
+      - Session 02 · Python Refresher: sessions/session-02-python-refresher.md
+      - Session 03 · Jupyter in Depth: sessions/session-03-jupyter-in-depth.md
+      - Session 04 · Git & GitHub: sessions/session-04-git-and-github.md
+      - Session 05 · NumPy I: sessions/session-05-numpy-part-1.md
+      - Session 06 · NumPy II: sessions/session-06-numpy-part-2.md
+      - Session 07 · Pandas I: sessions/session-07-pandas-part-1.md
+      - Session 08 · Pandas II: sessions/session-08-pandas-part-2.md
+      - Session 09 · Data Cleaning I: sessions/session-09-data-cleaning-1.md
+      - Session 10 · Data Cleaning II: sessions/session-10-data-cleaning-2.md
+      - Session 11 · Data Acquisition & APIs: sessions/session-11-data-acquisition.md
+      - Session 12 · Combining Data: sessions/session-12-combining-data.md
+      - Session 13 · Matplotlib: sessions/session-13-matplotlib.md
+      - Session 14 · Seaborn: sessions/session-14-seaborn.md
+      - Session 15 · EDA Workflow: sessions/session-15-eda-workflow.md
+      - Session 16 · Midterm Exam: sessions/session-16-midterm-exam.md
+      - Session 17 · Intro to Machine Learning: sessions/session-17-intro-to-machine-learning.md
+      - Session 18 · Linear Regression: sessions/session-18-linear-regression.md
+      - Session 19 · Classification I: sessions/session-19-classification-1.md
+      - Session 20 · Classification II: sessions/session-20-classification-2.md
+      - Session 21 · Clustering: sessions/session-21-clustering.md
+      - Session 22 · Pipelines & Cross-validation: sessions/session-22-pipelines-and-cross-validation.md
+      - Session 23 · Final Project Kickoff: sessions/session-23-project-kickoff.md
+      - Session 24 · Reproducible Workflows: sessions/session-24-reproducible-workflows.md
+      - Session 25 · LLMs for Data Science: sessions/session-25-llms-for-data-science.md
+      - Session 26 · PandasAI: sessions/session-26-pandasai.md
+      - Session 27 · Ollama & Local Models: sessions/session-27-ollama-local-models.md
+      - Session 28 · AI Agents: sessions/session-28-ai-agents.md
+      - Session 29 · n8n Automation: sessions/session-29-n8n-automation.md
+      - Session 30 · Ethics & Responsible AI: sessions/session-30-ethics-and-responsible-ai.md
+      - Session 31 · Project Presentations I: sessions/session-31-project-presentations-1.md
+      - Session 32 · Presentations II & Final Exam: sessions/session-32-project-presentations-2-and-final-exam.md
+
+  - Labs:
+      - Lab index & how to submit: labs/README.md
+      - Lab 01 · Environment Setup: labs/lab-01-what-is-data-science.md
+      - Lab 02 · Python Refresher: labs/lab-02-python-refresher.md
+      - Lab 03 · Jupyter in Depth: labs/lab-03-jupyter-in-depth.md
+      - Lab 04 · Git & GitHub Workflow: labs/lab-04-git-and-github.md
+      - Lab 05 · NumPy I: labs/lab-05-numpy-part-1.md
+      - Lab 06 · NumPy II: labs/lab-06-numpy-part-2.md
+      - Lab 07 · Pandas I: labs/lab-07-pandas-part-1.md
+      - Lab 08 · Pandas II: labs/lab-08-pandas-part-2.md
+      - Lab 09 · Data Cleaning I: labs/lab-09-data-cleaning-1.md
+      - Lab 10 · Data Cleaning II: labs/lab-10-data-cleaning-2.md
+      - Lab 11 · Data Acquisition: labs/lab-11-data-acquisition.md
+      - Lab 12 · Combining Data: labs/lab-12-combining-data.md
+      - Lab 13 · Matplotlib: labs/lab-13-matplotlib.md
+      - Lab 14 · Seaborn: labs/lab-14-seaborn.md
+      - Lab 15 · EDA Workflow: labs/lab-15-eda-workflow.md
+      - Lab 16 · Midterm Review: labs/lab-16-midterm-review.md
+      - Lab 17 · Intro to Machine Learning: labs/lab-17-intro-to-machine-learning.md
+      - Lab 18 · Linear Regression: labs/lab-18-linear-regression.md
+      - Lab 19 · Classification I: labs/lab-19-classification-1.md
+      - Lab 20 · Classification II: labs/lab-20-classification-2.md
+      - Lab 21 · Clustering: labs/lab-21-clustering.md
+      - Lab 22 · Pipelines & Cross-validation: labs/lab-22-pipelines-and-cross-validation.md
+      - Lab 23 · Project Kickoff: labs/lab-23-project-kickoff.md
+      - Lab 24 · Reproducible Workflows: labs/lab-24-reproducible-workflows.md
+      - Lab 25 · LLMs for Data Science: labs/lab-25-llms-for-data-science.md
+      - Lab 26 · PandasAI: labs/lab-26-pandasai.md
+      - Lab 27 · Ollama: labs/lab-27-ollama.md
+      - Lab 28 · Tool Calling: labs/lab-28-tool-calling.md
+      - Lab 29 · n8n Workflows: labs/lab-29-n8n-workflows.md
+      - Lab 30 · Ethics & Responsible AI: labs/lab-30-ethics-and-responsible-ai.md
+      - Lab 31 · Project Presentations: labs/lab-31-project-presentations.md
+      - Lab 32 · Final Submission & Exam: labs/lab-32-final-submission-and-exam.md
+
+  - Assignments:
+      - Assignments overview: assignments/README.md
+      - Assignment 1 · Data Cleaning & EDA: assignments/assignment-01-data-cleaning-eda/README.md
+      - Assignment 2 · API + Streamlit Data App: assignments/assignment-02-api-streamlit-app/README.md
+      - Streamlit tutorial (bundled with Assignment 2): assignments/assignment-02-api-streamlit-app/streamlit-tutorial.md
+
+  - Quizzes:
+      - Quizzes & how they work: assessments/quizzes.md
+  - Exams:
+      - Exams & how they work: assessments/exams.md
+
+  - Final Project:
+      - Final project overview: projects/README.md
+      - Guidelines: projects/final-project/guidelines.md
+      - Proposal template: projects/final-project/proposal-template.md
+      - Technical requirements: projects/final-project/technical-requirements.md
+      - README template: projects/final-project/readme-template.md
+      - Report template: projects/final-project/report-template.md
+      - Presentation template: projects/final-project/presentation-template.md
+      - Grading rubric: projects/final-project/grading-rubric.md
+      - CLO mapping: projects/final-project/clo-mapping.md
+      - Peer evaluation form: projects/final-project/peer-evaluation-form.md
+
+  - Resources:
+      - Resources overview: resources/README.md
+      - Course notebooks (download): course-notebooks/README.md
+      - Dataset registry: datasets/README.md
+      - Module C · AI-assisted deep dives: module-c/README.md
+
+  - Python Setup: resources/setup-guide.md
+  - Git & GitHub Guide: guides/git-github-guide.md
+
+  - Streamlit Guide:
+      - Streamlit module overview: streamlit/README.md
+      - What is Streamlit?: streamlit/streamlit-introduction.md
+      - Tutorial — your first app: streamlit/streamlit-tutorial.md
+      - Widgets: streamlit/streamlit-widgets.md
+      - Pandas in Streamlit apps: streamlit/streamlit-pandas.md
+      - Visualizations: streamlit/streamlit-visualization.md
+      - ML prediction apps: streamlit/streamlit-ml-app.md
+      - Mini dashboard project: streamlit/streamlit-dashboard-project.md
+      - Streamlit FAQ: streamlit/streamlit-faq.md
+      - Streamlit cheat sheet: streamlit/streamlit-cheatsheet.md
+      - Streamlit Lab 01 · First App: streamlit/labs/lab-01-first-app.md
+      - Streamlit Lab 02 · CSV Viewer: streamlit/labs/lab-02-csv-viewer.md
+      - Streamlit Lab 03 · EDA Dashboard: streamlit/labs/lab-03-eda-dashboard.md
+      - Streamlit Lab 04 · ML App: streamlit/labs/lab-04-ml-app.md
+
+  - PandasAI Guide: guides/pandasai-guide.md
+  - LLM & Ollama Guide: guides/llm-ollama-guide.md
+  - AI Agents Guide: guides/ai-agents-guide.md
+  - n8n Guide: guides/n8n-guide.md
+  - FAQ: guides/faq.md
+
+  - Publish this Website: DEPLOYING.md

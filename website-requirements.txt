@@ -1,0 +1,4 @@
+# Website build requirements (used by .github/workflows/website.yml and for
+# local preview with `pip install -r website-requirements.txt`).
+mkdocs==1.6.1
+mkdocs-material==9.7.7
