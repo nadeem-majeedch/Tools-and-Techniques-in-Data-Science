@@ -1,7 +1,8 @@
 # Final Project — Guidelines
 
-**Weight:** 15% of the course grade (the project sits inside the **40% final**
-institutional bucket, alongside the 25% final exam) · **Teams:** 2–3 students · **CLOs:** 1, 2, 3
+**Weight:** 6 of the 25-mark **Sessional** component (institutional scheme:
+Sessional 25 · Mid Exam 35 · Final Exam 40 — see
+[assessment-plan.md](../../assessment-plan.md)) · **Teams:** 2–3 students · **CLOs:** 1, 2, 3
 
 ## 1. What you must build
 

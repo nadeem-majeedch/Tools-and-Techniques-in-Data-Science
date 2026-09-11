@@ -1,8 +1,16 @@
-"""Streamlit front end for the course grade calculator (25 / 35 / 40 scheme).
+"""Streamlit front end for the course grade calculator.
 
 Run it with:
 
     streamlit run tools/grade_app.py
+
+CONFIRMED institutional scheme (total = 100 marks):
+
+    Sessional = 25 · Mid Exam = 35 · Final Exam = 40
+
+Final Percentage = Sessional + Mid Exam + Final Exam (the maximum is exactly
+100, so no normalization is needed). The letter grade and grade points come
+from the official scale documented in assessment-plan.md.
 
 The arithmetic lives in tools/grade_calculator.py (pure Python, self-tested);
 this file only handles input widgets and presentation — the same logic/UI
@@ -20,18 +28,18 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from grade_calculator import (  # noqa: E402
-    BUCKET_WEIGHTS,
     COMPONENTS,
+    GRADE_SCALE,
     ValidationError,
     calculate,
 )
 
-st.set_page_config(page_title="Grade Calculator — 25/35/40", page_icon="🎓")
+st.set_page_config(page_title="Grade Calculator — Sessional/Mid/Final", page_icon="🎓")
 
 st.title("🎓 Grade Calculator")
 st.caption(
-    "Institutional scheme — Continuous 25% (Labs 10 · Quizzes 5 · Assignments 10) "
-    "· Midterm 35% · Final 40% (Final exam 25 · Final project 15). "
+    "Confirmed institutional scheme — **Sessional 25 marks · Mid Exam 35 marks · "
+    "Final Exam 40 marks** (total 100). Final Percentage = Sessional + Mid + Final. "
     "Leave a component empty if it has not been assessed yet."
 )
 
@@ -42,9 +50,9 @@ with st.form("marks"):
     cols = st.columns(3)
     inputs: dict[str, float | None] = {}
     for i, comp in enumerate(COMPONENTS):
-        with cols[i % 3]:
+        with cols[i]:
             inputs[comp.key] = st.number_input(
-                f"{comp.label} — weight {comp.weight:g}%",
+                f"{comp.label} (out of {comp.max_marks:g})",
                 min_value=0.0,
                 max_value=comp.max_marks,
                 value=None,                      # empty = not yet assessed
@@ -62,9 +70,8 @@ if not submitted:
         "Tip: press **Calculate** with your own marks — the numbers below are the "
         "worked example from the assessment plan."
     )
-    example = {"labs": 8.0, "quizzes": 4.0, "assignments": 8.5,
-               "midterm": 28.0, "final_exam": 20.0, "project": 12.5}
-    st.markdown("**Worked example** — raw marks used below:")
+    example = {"sessional": 20.0, "mid_exam": 28.0, "final_exam": 33.0}
+    st.markdown("**Worked example** — 20/25 + 28/35 + 33/40:")
     inputs = {k: example.get(k) for k in inputs}
 
 # Validate + compute (user inputs after submit, example otherwise).
@@ -75,48 +82,43 @@ except ValidationError as err:
     st.stop()
 
 # ---------------------------------------------------------------- breakdown
-st.subheader("Component breakdown")
+st.subheader("Marks breakdown")
 
 table = [
     {
         "Component": r["label"],
-        "Bucket": r["bucket"],
-        "Raw marks": "—" if r["raw"] is None else f"{r['raw']:g} / {r['max']:g}",
-        "Weight": f"{r['weight']:g}%",
-        "Weighted contribution": "—" if r["weighted"] is None else f"{r['weighted']:.2f}",
+        "Max marks": f"{r['max']:g}",
+        "Your marks": "—" if r["raw"] is None else f"{r['raw']:g}",
+        "Status": "not yet assessed" if r["raw"] is None else "assessed",
     }
     for r in result["rows"]
 ]
 st.dataframe(table, width="stretch", hide_index=True)
 
-st.caption("Weighted contribution = (your marks ÷ maximum marks) × component weight.")
+st.caption("Final Percentage = Sessional + Mid Exam + Final Exam (max = 100, so the total is the percentage).")
 
-# ---------------------------------------------------------------- buckets
-st.subheader("Buckets (25 / 35 / 40)")
-bcols = st.columns(3)
-for col, (bucket, info) in zip(bcols, BUCKET_WEIGHTS.items()):
-    b = result["buckets"][bucket]
-    if b["assessed_weight"]:
-        col.metric(
-            bucket,
-            f"{b['earned']:.2f} / {b['weight']:g}",
-            f"{b['percent']:.1f}% of bucket so far",
-        )
-    else:
-        col.metric(bucket, f"0 / {b['weight']:g}", "not yet assessed")
-
-# ---------------------------------------------------------------- final score
+# ---------------------------------------------------------------- result
 st.divider()
-score = result["final_score"]
+score = result["total"]
 c1, c2, c3 = st.columns(3)
-c1.metric("Final score (out of 100)", f"{score:.2f}")
-c2.metric("Letter grade (indicative)", result["letter"])
-c3.metric("Best still reachable", f"{result['max_possible']:.1f}")
+c1.metric("Total (out of 100)", f"{score:g}")
+c2.metric("Letter grade", result["letter"])
+c3.metric("Grade points", f"{result['points']:.2f}")
+
+if score < result["max_possible"]:
+    st.info(f"Assessed so far: **{score:g}** of the {result['max_possible']:g} marks "
+            f"still reachable — best possible final total is **{result['max_possible']:g}/100**.")
 
 st.progress(min(score / 100.0, 1.0))
 
-st.caption(
-    "Letter grade is indicative only — your university's official scale and "
-    "rounding policy always take precedence. See `assessment-plan.md` for the "
-    "full formula."
-)
+# ---------------------------------------------------------------- scale
+with st.expander("Official grading scale"):
+    st.dataframe(
+        [
+            {"Grade": letter, "Percentage": pct_range, "Grade points": f"{points:.2f}"}
+            for _floor, letter, points, pct_range in GRADE_SCALE
+        ],
+        width="stretch",
+        hide_index=True,
+    )
+    st.caption("Your university's official notifications always take precedence over this calculator.")

@@ -31,5 +31,6 @@ Both exams follow the same six-part structure, scaled by duration:
   policy and CLO-3.
 - Part V (practical) follows the assessment-plan convention: executed,
   restart-safe notebook cells with visible outputs.
-- Weights are proposals; confirm timing and open/closed notes against
-  program policy.
+- Mark totals follow the confirmed institutional scheme (Mid Exam 35,
+  Final Exam 40); each paper's internal point total is scaled to its course
+  marks. Confirm timing and open/closed notes against program policy.

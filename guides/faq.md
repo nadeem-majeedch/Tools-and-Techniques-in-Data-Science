@@ -33,10 +33,13 @@ or ask on the course channel.
     labs give you expected outputs so you can check your own work.
 
 ??? question "How is my final grade calculated? Can I track it myself?"
-    The scheme is **Continuous 25%** (Labs 10 · Quizzes 5 · Assignments 10),
-    **Midterm 35%**, **Final 40%** (Final exam 25 · Final project 15). Each
-    component contributes `(your marks ÷ max marks) × weight` to a score out
-    of 100 — see [assessment plan §2](../assessment-plan.md). A ready-made
+    The confirmed institutional scheme is **Sessional 25 marks · Mid Exam
+    35 marks · Final Exam 40 marks** (total 100). Because the maximum is
+    exactly 100, **Final Percentage = Sessional + Mid + Final** — no
+    normalization needed. The 25-mark Sessional is composed of Labs (8),
+    Quizzes (5), Assignments (6) and the Final project (6). The letter grade
+    and grade points follow the official scale in
+    [assessment plan §3](../assessment-plan.md). A ready-made
     [Grade Calculator](../tools/README.md) (Streamlit app) is included in the
     course repository: run `streamlit run tools/grade_app.py`.
 

@@ -72,19 +72,21 @@ Setup instructions: [resources/setup-guide.md](resources/setup-guide.md)
 
 ## 7. Assessment map
 
-| Component | Count | Weight* | CLOs assessed |
-|---|---|---|---|
-| Labs | 32 | 10% | 1, 2, 3 |
-| Quizzes | 2 | 5% | 1, 2, 3 |
-| Assignments | 2 | 10% | 1, 3 |
-| Midterm exam | 1 | 35% | 1, 2 |
-| Final exam | 1 | 25% | 1, 2, 3 |
-| Final project | 1 | 15% | 1, 2, 3 |
+**Institutional scheme (confirmed):** Sessional 25 · Mid Exam 35 · Final
+Exam 40 · **Total 100**.
 
-\* Weights roll up to the institutional **25% continuous / 35% midterm / 40%
-final** distribution (continuous = labs + quizzes + assignments; final =
-final exam + project). Full rubric and policy details:
-[assessment-plan.md](assessment-plan.md)
+Internal composition of the 25-mark Sessional (course-level choice):
+
+| Sessional component | Count | Marks | CLOs assessed |
+|---|---|---|---|
+| Labs | 32 | 8 | 1, 2, 3 |
+| Quizzes | 2 | 5 | 1, 2, 3 |
+| Assignments | 2 | 6 | 1, 3 |
+| Final project | 1 | 6 | 1, 2, 3 |
+
+The **Mid Exam (35 marks, W8 S16)** and **Final Exam (40 marks, W16 S32)**
+complete the 100-mark total. Full rubric, official grading scale and policy
+details: [assessment-plan.md](assessment-plan.md)
 
 ## 8. Reference materials
 

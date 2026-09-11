@@ -216,7 +216,7 @@ nav:
       - Course notebooks (download): course-notebooks/README.md
       - Dataset registry: datasets/README.md
       - Module C · AI-assisted deep dives: module-c/README.md
-      - Grade Calculator (25/35/40): tools/README.md
+      - Grade Calculator (Sessional 25 · Mid 35 · Final 40): tools/README.md
 
   - Python Setup: resources/setup-guide.md
   - Git & GitHub Guide: guides/git-github-guide.md

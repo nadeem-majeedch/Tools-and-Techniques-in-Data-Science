@@ -39,19 +39,26 @@ Detailed week-by-week plan: [weekly-schedule.md](weekly-schedule.md)
 
 ## Assessment at a glance
 
-| Component | Weight* | CLOs |
-|---|---|---|
-| Labs (32) | 10% | 1, 2, 3 |
-| Quizzes (2) | 5% | 1, 2, 3 |
-| Assignments (2) | 10% | 1, 3 |
-| Midterm exam | 35% | 1, 2 |
-| Final exam | 25% | 1, 2, 3 |
-| Final project | 15% | 1, 2, 3 |
-| **Continuous : Midterm : Final** | **25 : 35 : 40** | |
+**Institutional scheme (confirmed):**
 
-*Component weights roll up to the institutional 25% continuous (labs + quizzes +
-assignments) / 35% midterm / 40% final (exam + project) distribution — see
-[assessment-plan.md](assessment-plan.md) for details.
+| Institutional component | Marks |
+|---|---|
+| Sessional | 25 |
+| Mid Exam | 35 |
+| Final Exam | 40 |
+| **Total** | **100** |
+
+Internal composition of the 25-mark Sessional (course-level choice):
+
+| Sessional component | Marks | CLOs |
+|---|---|---|
+| Labs (32) | 8 | 1, 2, 3 |
+| Quizzes (2) | 5 | 1, 2, 3 |
+| Assignments (2) | 6 | 1, 3 |
+| Final project | 6 | 1, 2, 3 |
+
+See [assessment-plan.md](assessment-plan.md) for the full plan, the official
+grading scale, and the grade calculator.
 
 ## Repository structure
 
@@ -80,7 +87,7 @@ assignments) / 35% midterm / 40% final (exam + project) distribution — see
 ├── assignments/           # 2 graded assignments (cleaning+EDA, API+Streamlit)
 ├── labs/                  # 32 lab exercises + instructor solutions
 ├── datasets/              # Dataset registry and small data files
-├── tools/                 # Grade calculator (Streamlit app, 25/35/40 scheme)
+├── tools/                 # Grade calculator (Streamlit app, Sessional 25 · Mid 35 · Final 40)
 ├── projects/              # Final project framework (guidelines, rubric, templates)
 └── resources/             # Setup guide, readings, cheatsheets
 ```

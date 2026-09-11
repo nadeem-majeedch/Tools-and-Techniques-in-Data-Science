@@ -1,7 +1,7 @@
 # Assignment 1 — Data Cleaning + Exploratory Data Analysis
 
 **Released:** W6 S12 · **Due:** W8 S15 (before session start) · **Individual**
-**Weight:** 5% of course grade (part of the 10% assignments component)
+**Weight:** 3 of the 25-mark Sessional (assignments component totals 6)
 **CLO mapping:** CLO-1 (primary)
 
 ---

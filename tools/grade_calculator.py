@@ -3,15 +3,17 @@
 This module deliberately contains no Streamlit code so it can be unit-tested
 and reused (e.g. in a notebook or a marking script).
 
-Institutional scheme (25 : 35 : 40):
+CONFIRMED institutional scheme (total = 100 marks):
 
-    Continuous Assessment = 25%  (Labs 10 + Quizzes 5 + Assignments 10)
-    Midterm               = 35%
-    Final                 = 40%  (Final exam 25 + Final project 15)
+    Sessional  = 25 marks
+    Mid Exam   = 35 marks
+    Final Exam = 40 marks
 
-Final score = sum of every component's weighted contribution, where
+Final Percentage = Sessional + Mid Exam + Final Exam
 
-    weighted contribution = (your marks / max marks) * component weight
+Because the maximum is exactly 100, no normalization is required: the total
+out of 100 IS the percentage. The letter grade and grade points come from the
+official scale in GRADE_SCALE below (and in assessment-plan.md).
 """
 
 from __future__ import annotations
@@ -21,82 +23,90 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class Component:
-    """One assessable component of the course."""
+    """One component of the confirmed institutional scheme."""
 
     key: str
     label: str
-    weight: float          # percentage of the final grade, e.g. 10.0
-    max_marks: float       # raw marks available, e.g. 30
-    bucket: str            # "Continuous", "Midterm" or "Final"
+    max_marks: float  # raw marks available: 25, 35 or 40
 
 
-# The institutional scheme, exactly as documented in assessment-plan.md.
-# Bucket totals are fixed: Continuous 25, Midterm 35, Final 40.
+# The confirmed institutional scheme, exactly as documented in
+# assessment-plan.md. Totals are fixed: 25 + 35 + 40 = 100.
 COMPONENTS: tuple[Component, ...] = (
-    Component("labs",       "Labs (32)",        10.0, 10.0, "Continuous"),
-    Component("quizzes",    "Quizzes (2)",       5.0,  5.0, "Continuous"),
-    Component("assignments","Assignments (2)",  10.0, 10.0, "Continuous"),
-    Component("midterm",    "Midterm exam",     35.0, 35.0, "Midterm"),
-    Component("final_exam", "Final exam",       25.0, 25.0, "Final"),
-    Component("project",    "Final project",    15.0, 15.0, "Final"),
+    Component("sessional",  "Sessional",  25.0),
+    Component("mid_exam",   "Mid Exam",   35.0),
+    Component("final_exam", "Final Exam", 40.0),
 )
 
-BUCKET_WEIGHTS = {"Continuous": 25.0, "Midterm": 35.0, "Final": 40.0}
+TOTAL_MARKS = 100.0  # 25 + 35 + 40
+
+# Official grading scale: (minimum percentage, letter, grade points, display range).
+GRADE_SCALE: tuple[tuple[float, str, float, str], ...] = (
+    (85.0, "A",  4.00, "85% and above"),
+    (80.0, "A-", 3.70, "80–84%"),
+    (75.0, "B+", 3.30, "75–79%"),
+    (70.0, "B",  3.00, "70–74%"),
+    (65.0, "B-", 2.70, "65–69%"),
+    (61.0, "C+", 2.30, "61–64%"),
+    (58.0, "C",  2.00, "58–60%"),   # 58–60 for C
+    (55.0, "C-", 1.70, "55–57%"),
+    (50.0, "D",  1.00, "50–54%"),
+    (0.0,  "F",  0.00, "below 50%"),
+)
 
 
 class ValidationError(ValueError):
     """Raised when an input mark is impossible (negative, above max, non-numeric)."""
 
 
-def calculate(marks: dict[str, float]) -> dict:
-    """Compute weighted contributions from raw marks.
+def calculate(marks: dict[str, float | None]) -> dict:
+    """Compute the total, percentage, letter grade and grade points.
 
     marks maps component key -> raw marks obtained. Components may be omitted
     (treated as not yet assessed) or given as None.
 
-    Returns a dict with per-component rows, bucket subtotals and the final
-    score out of 100. Raises ValidationError for impossible marks.
+    Returns a dict with per-component rows, the total out of 100, the
+    percentage, letter, grade points and the best score still reachable.
+    Raises ValidationError for impossible marks.
     """
     rows = []
     for comp in COMPONENTS:
         raw = marks.get(comp.key)
         if raw is None:
             rows.append({
-                "key": comp.key, "label": comp.label, "bucket": comp.bucket,
-                "raw": None, "max": comp.max_marks, "weight": comp.weight,
-                "weighted": None, "assessed": False,
+                "key": comp.key, "label": comp.label,
+                "raw": None, "max": comp.max_marks,
+                "assessed": False,
             })
             continue
         raw = _validate(comp, raw)
         rows.append({
-            "key": comp.key, "label": comp.label, "bucket": comp.bucket,
-            "raw": raw, "max": comp.max_marks, "weight": comp.weight,
-            "weighted": raw / comp.max_marks * comp.weight, "assessed": True,
+            "key": comp.key, "label": comp.label,
+            "raw": raw, "max": comp.max_marks,
+            "assessed": True,
         })
 
-    buckets = {}
-    for bucket, total_weight in BUCKET_WEIGHTS.items():
-        earned = sum(r["weighted"] for r in rows if r["bucket"] == bucket and r["assessed"])
-        assessed_weight = sum(r["weight"] for r in rows if r["bucket"] == bucket and r["assessed"])
-        buckets[bucket] = {
-            "weight": total_weight,
-            "earned": earned,
-            "assessed_weight": assessed_weight,
-            # Share of the bucket achieved so far (None if nothing assessed yet).
-            "percent": (earned / assessed_weight * 100.0) if assessed_weight else None,
-        }
-
-    final_score = sum(r["weighted"] for r in rows if r["assessed"])
-    max_possible = final_score + sum(
-        r["weight"] for r in rows if not r["assessed"]
+    total = sum(r["raw"] for r in rows if r["assessed"])
+    max_possible = total + sum(
+        r["max"] for r in rows if not r["assessed"]
     )
+    letter, points = letter_grade(total)
     return {
         "rows": rows,
-        "buckets": buckets,
-        "final_score": final_score,          # out of 100
-        "max_possible": max_possible,        # what a perfect remaining record could reach
-        "letter": letter_grade(final_score),
+        "total": total,                # out of 100
+        "percentage": total,           # max is exactly 100 → no normalization
+        "letter": letter,
+        "points": points,
+        "max_possible": max_possible,  # best still reachable with remaining components
     }
+
+
+def letter_grade(score: float) -> tuple[str, float]:
+    """Return (letter, grade points) for a score out of 100, per the official scale."""
+    for floor, letter, points, _range in GRADE_SCALE:
+        if score >= floor:
+            return letter, points
+    return "F", 0.00
 
 
 def _validate(comp: Component, raw: float) -> float:
@@ -113,45 +123,57 @@ def _validate(comp: Component, raw: float) -> float:
     return raw
 
 
-def letter_grade(score: float) -> str:
-    """Common Pakistani-university letter scale. Adjust to your program's policy."""
-    thresholds = [(85, "A"), (80, "A-"), (75, "B+"), (70, "B"),
-                  (65, "B-"), (61, "C+"), (58, "C"), (55, "C-"),
-                  (50, "D"), (0, "F")]
-    for floor, letter in thresholds:
-        if score >= floor:
-            return letter
-    return "F"
-
-
 def _self_test() -> None:
-    """Verify the arithmetic and validation; runs with `python tools/grade_calculator.py`."""
-    # Example from assessment-plan.md: a consistent full record.
-    example = {
-        "labs": 8.0, "quizzes": 4.0, "assignments": 8.5,
-        "midterm": 28.0, "final_exam": 20.0, "project": 12.5,
-    }
-    res = calculate(example)
-    expected = (8.0 + 4.0 + 8.5) + 28.0 + 20.0 + 12.5  # weights == max marks here
-    assert abs(res["final_score"] - expected) < 1e-9, res["final_score"]
-    assert res["letter"] == "A-", res["letter"]  # 81 points -> A- on this scale
+    """Verify arithmetic, the official scale and validation; run directly."""
+    # Example 1 (from assessment-plan.md): 20 + 28 + 33 = 81 → A- · 3.70
+    res = calculate({"sessional": 20.0, "mid_exam": 28.0, "final_exam": 33.0})
+    assert res["total"] == 81.0, res["total"]
+    assert res["percentage"] == 81.0
+    assert res["letter"] == "A-", res["letter"]
+    assert res["points"] == 3.70, res["points"]
+    assert res["max_possible"] == 81.0  # nothing unassessed → best reachable = 81
 
-    # Partial record: only some components assessed.
-    partial = calculate({"labs": 9.0, "midterm": 30.0})
-    assert abs(partial["final_score"] - (9.0 + 30.0)) < 1e-9
-    # 1 lab mark and 5 midterm marks are gone forever, so the best reachable
-    # score is 100 - 1 - 5 = 94.
-    assert abs(partial["max_possible"] - 94.0) < 1e-9, partial["max_possible"]
-    assert partial["buckets"]["Continuous"]["percent"] == 90.0
+    # Example 2: perfect record 100/100 → A · 4.00
+    perfect = calculate({"sessional": 25.0, "mid_exam": 35.0, "final_exam": 40.0})
+    assert perfect["total"] == 100.0
+    assert perfect["letter"] == "A", perfect["letter"]
+    assert perfect["points"] == 4.00, perfect["points"]
+
+    # Official scale boundaries (score → letter · points).
+    for score, want_letter, want_points in [
+        (85.0, "A", 4.00), (84.99, "A-", 3.70),
+        (80.0, "A-", 3.70), (79.99, "B+", 3.30),
+        (75.0, "B+", 3.30), (70.0, "B", 3.00),
+        (65.0, "B-", 2.70), (64.99, "C+", 2.30),
+        (61.0, "C+", 2.30), (60.0, "C", 2.00), (58.0, "C", 2.00),
+        (57.99, "C-", 1.70), (55.0, "C-", 1.70),
+        (54.99, "D", 1.00), (50.0, "D", 1.00),
+        (49.99, "F", 0.00), (0.0, "F", 0.00),
+    ]:
+        letter, points = letter_grade(score)
+        assert (letter, points) == (want_letter, want_points), \
+            f"{score}: got {letter} · {points}, want {want_letter} · {want_points}"
+
+    # Partial record: only Sessional assessed so far.
+    partial = calculate({"sessional": 20.0})
+    assert partial["total"] == 20.0
+    # 5 sessional marks are gone forever → best reachable is 95, not 100.
+    assert partial["max_possible"] == 95.0, partial["max_possible"]
 
     # Validation: impossible marks must raise.
-    for bad in ({"labs": -1}, {"midterm": 36}, {"project": 99}):
+    for bad in ({"sessional": 26}, {"mid_exam": -1}, {"final_exam": 41},
+                {"sessional": "twenty"}):
         try:
             calculate(bad)
         except ValidationError:
             pass
         else:
             raise AssertionError(f"expected ValidationError for {bad}")
+
+    # The display ranges must match the official notifications exactly.
+    assert GRADE_SCALE[6][3] == "58–60%", GRADE_SCALE[6][3]
+    assert GRADE_SCALE[1][3] == "80–84%"
+    assert GRADE_SCALE[-1][3] == "below 50%"
 
     print("grade calculator self-test passed")
 

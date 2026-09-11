@@ -1,7 +1,7 @@
 # Final Project — Grading Rubric
 
-**Project weight:** 15% of the course grade (within the 40% final
-institutional bucket) · **Rubric version:** v1.1
+**Project weight:** 6 of the 25-mark Sessional (institutional scheme:
+Sessional 25 · Mid Exam 35 · Final Exam 40) · **Rubric version:** v1.2
 
 ## 1. How the project grade is built (100% project grade)
 
@@ -22,7 +22,7 @@ institutional bucket) · **Rubric version:** v1.1
 ## 2. Main submission rubric (85% of project grade)
 
 Each criterion is scored on the scale in §3. Weights follow
-`assessment-plan.md` §4.
+`assessment-plan.md` §5.
 
 | # | Criterion (weight) | What we grade | CLO |
 |---|---|---|---|
@@ -73,4 +73,5 @@ Each criterion is scored on the scale in §3. Weights follow
 | Viva (10) | /10 | | individual |
 | **Total** | **/100** | | |
 
-Rounding to one decimal. Final course contribution = project grade × 15%.
+Rounding to one decimal. Final course contribution = project grade ÷ 100 × 6
+Sessional marks (e.g. 85/100 → 5.1 of the 6 marks).

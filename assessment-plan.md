@@ -1,51 +1,52 @@
 # Assessment Plan
 
-## 1. Components and weights
+## 1. Institutional assessment scheme (confirmed)
 
-| Component | Count | Weight* | When | CLOs |
+| Institutional component | Marks |
+|---|---|
+| **Sessional** | **25** |
+| **Mid Exam** | **35** |
+| **Final Exam** | **40** |
+| **Total** | **100** |
+
+**Only the three totals above are the institutional scheme.** The internal
+composition of the 25-mark Sessional below is a course-level pedagogical
+choice — the instructor may adjust it, but the Sessional total of 25 marks
+is fixed:
+
+| Sessional component | Count | Marks | When | CLOs |
 |---|---|---|---|---|
-| Labs | 32 | 10% | Weekly, due before the next session | 1, 2, 3 |
-| Quizzes | 2 | 5% | W8 S15, W15 S29 (session start, ~25 min) | 1, 2, 3 |
-| Assignments | 2 | 10% | See schedule | 1, 3 |
-| Midterm exam | 1 | 35% | W8 S16 | 1, 2 |
-| Final exam | 1 | 25% | W16 S32 | 1, 2, 3 |
-| Final project | 1 | 15% | Kickoff W12, presentations W16 | 1, 2, 3 |
-| **Total** | | **100%** | | |
+| Labs | 32 | 8 (~0.25 each) | Weekly, due before the next session | 1, 2, 3 |
+| Quizzes | 2 | 5 (2.5 each) | W8 S15, W15 S29 (session start, ~25 min) | 1, 2, 3 |
+| Assignments | 2 | 6 (3 each) | See schedule | 1, 3 |
+| Final project | 1 | 6 | Kickoff W12, presentations W16 | 1, 2, 3 |
+| **Sessional total** | | **25** | | |
 
-\* The component weights roll up to the **institutional 25 : 35 : 40
-distribution** (continuous : midterm : final) required by the program. The
-sub-split inside each bucket is a proposal and may be adjusted — the bucket
-totals are fixed:
-
-| Institutional component | Weight | Made up of |
-|---|---|---|
-| **Continuous** | **25%** | Labs 10% · Quizzes 5% · Assignments 10% |
-| **Midterm** | **35%** | Midterm exam 35% |
-| **Final** | **40%** | Final exam 25% · Final project 15% |
+- **Mid Exam — 35 marks:** W8 S16, 90 minutes; written portion + practical
+  notebook task (CLO-1 with an entry-level CLO-2 task).
+- **Final Exam — 40 marks:** W16 S32, 120 minutes; comprehensive written +
+  practical (CLO-1, CLO-2, CLO-3, including a short AI-ethics /
+  reproducibility section).
 
 ## 2. How your final grade is calculated
 
-Every component is converted to a **weighted contribution** out of 100:
-
 ```
-weighted contribution = (your marks ÷ maximum marks) × component weight
+Final Percentage = Sessional + Mid Exam + Final Exam
 ```
 
-**Final score (out of 100) = sum of all weighted contributions.**
+Because the maximum is exactly 100 marks, the total **is** the percentage —
+no normalization is required.
 
-Worked example:
+Worked examples:
 
-| Component | Your marks | Max marks | Weight | Contribution |
-|---|---|---|---|---|
-| Labs | 8 | 10 | 10% | (8÷10) × 10 = 8.00 |
-| Quizzes | 4 | 5 | 5% | (4÷5) × 5 = 4.00 |
-| Assignments | 8.5 | 10 | 10% | (8.5÷10) × 10 = 8.50 |
-| Midterm exam | 28 | 35 | 35% | (28÷35) × 35 = 28.00 |
-| Final exam | 20 | 25 | 25% | (20÷25) × 25 = 20.00 |
-| Final project | 12.5 | 15 | 15% | (12.5÷15) × 15 = 12.50 |
-| **Final score** | | | | **81.00 / 100** |
-
-The buckets roll up as Continuous 20.50/25 · Midterm 28.00/35 · Final 32.50/40.
+| Component | Max marks | Example 1 | Example 2 (perfect) |
+|---|---|---|---|
+| Sessional | 25 | 20 | 25 |
+| Mid Exam | 35 | 28 | 35 |
+| Final Exam | 40 | 33 | 40 |
+| **Total = Percentage** | **100** | **81** | **100** |
+| **Letter grade** | | **A-** | **A** |
+| **Grade points** | | **3.70** | **4.00** |
 
 A ready-made **Grade Calculator** (Streamlit app) is included in the course
 repository so you never have to do this by hand:
@@ -54,26 +55,40 @@ repository so you never have to do this by hand:
 streamlit run tools/grade_app.py
 ```
 
-Enter your raw marks per component (leave future components empty); it shows
-raw marks, weights, weighted contributions, bucket subtotals and the final
-score out of 100. The same arithmetic is in `tools/grade_calculator.py`
-(pure Python, self-tested).
+Enter your Sessional, Mid Exam and Final Exam marks (leave future components
+empty); it shows the total, percentage, letter grade and grade points. The
+same arithmetic is in `tools/grade_calculator.py` (pure Python, self-tested).
 
-## 3. Component details
+## 3. Official grading scale
 
-### Labs (32 × ~0.3% = 10%)
+| Grade | Percentage | Grade points |
+|---|---|---|
+| A | 85% and above | 4.00 |
+| A- | 80–84% | 3.70 |
+| B+ | 75–79% | 3.30 |
+| B | 70–74% | 3.00 |
+| B- | 65–69% | 2.70 |
+| C+ | 61–64% | 2.30 |
+| C | 58–60% | 2.00 |
+| C- | 55–57% | 1.70 |
+| D | 50–54% | 1.00 |
+| F | below 50% | 0.00 |
+
+## 4. Component details
+
+### Labs (8 marks of the Sessional)
 Hands-on exercises completed largely in class and finished at home. Each lab has
 stated objectives, a starter notebook, tasks, and 2–3 checkpoint questions.
 Graded for correctness of the notebook, code quality, and answers to checkpoint
 questions. See `labs/`.
 
-### Quizzes (2 × 2.5% = 5%)
+### Quizzes (5 marks of the Sessional — 2.5 each)
 Short, closed-notes, in-class quizzes (multiple choice, code tracing,
 debugging, short answer, and scenario items) covering the preceding weeks:
 Quiz 1 = Weeks 1–7, Quiz 2 = Weeks 8–14. Full question banks with keys in
 `quizzes/` (quiz-1.md, quiz-2.md).
 
-### Assignments (2 × 5% = 10%)
+### Assignments (6 marks of the Sessional — 3 each)
 Larger individual tasks, submitted via a private GitHub repository (or as
 specified by the instructor):
 
@@ -88,25 +103,25 @@ specified by the instructor):
 Machine-learning modeling is assessed through Labs 17–22, Quiz 2, the final
 exam, and the final project's modeling component.
 
-### Midterm exam (35%)
-Written portion (concepts, code reading) + practical notebook task (CLO-1 with
-an entry-level CLO-2 task). Open-notes notebook allowed for the practical part
-as specified by the instructor.
-
-### Final exam (25%)
-Comprehensive: CLO-1, CLO-2, and CLO-3 concepts, including a short
-AI-ethics/reproducibility section.
-
-### Final project (15%)
+### Final project (6 marks of the Sessional)
 Team of 2–3 students; end-to-end data science project from a problem statement
 to an analysis with a basic model and an AI-assisted or automated component.
 Deliverables: proposal (W13), GitHub repository, presentation (W16), final
 submission with a reproducibility + ethics reflection. See `projects/`.
 
-## 4. Rubric sketch
+### Mid Exam (35 marks)
+Written portion (concepts, code reading) + practical notebook task (CLO-1 with
+an entry-level CLO-2 task). Open-notes notebook allowed for the practical part
+as specified by the instructor.
+
+### Final Exam (40 marks)
+Comprehensive: CLO-1, CLO-2, and CLO-3 concepts, including a short
+AI-ethics/reproducibility section.
+
+## 5. Rubric sketch
 
 *Internal project rubric — the percentages below are applied to the project's
-15% course weight; they are not course-level weights.*
+6-mark share of the Sessional; they are not course-level weights.*
 
 | Criterion | Weight (project) | Description |
 |---|---|---|
@@ -120,7 +135,7 @@ submission with a reproducibility + ethics reflection. See `projects/`.
 Labs and assignments are graded on correctness, code quality, and completeness
 of required outputs; rubrics are included in each deliverable folder.
 
-## 5. Policies
+## 6. Policies
 
 ### Submission
 - All code-based deliverables are submitted via Git/GitHub (commit history
