@@ -120,7 +120,7 @@ sometimes and wrong other times: verify, always.)
 ## 9. Assessment questions
 
 **Q1.** Name two advantages and two limitations of running an LLM locally
-with Ollama. *(CLO-3 · Understand · Easy)*
+with Ollama. **CLO-3 · Understand · Easy**
 **Answer:** Advantages: data stays on the machine, free, offline. Limits:
 smaller/weaker models, bounded by RAM, still hallucinate.
 
@@ -132,11 +132,11 @@ them to a third party. Ollama keeps them on the machine while still giving
 an LLM assistant.
 
 **Q3.** Your laptop has 8 GB RAM and `ollama run llama3.2` crashes. What do
-you try? *(CLO-3 · Apply · Easy)*
+you try? **CLO-3 · Apply · Easy**
 **Answer:** use a smaller model (`llama3.2:1b`), close other applications, or
 reduce the context used per request.
 
 **Q4.** Ollama gave a confident but wrong answer about your dataset. Does
-running it locally change how you handle that? *(CLO-3 · Evaluate · Medium)*
+running it locally change how you handle that? **CLO-3 · Evaluate · Medium**
 **Answer:** No — local only changes where the model runs, not how reliable
 it is; the verification protocol still applies to every output.

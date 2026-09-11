@@ -182,7 +182,7 @@ Add a metric showing how many rows are outliers at the current threshold.
 ## Checkpoint questions
 
 1. What three arguments does the reliable `st.pyplot` pattern need?
-   *(CLO-1 · Understand · Easy)*
+   **CLO-1 · Understand · Easy**
    **Answer:** `fig, ax = plt.subplots()`, drawing on `ax` (with `ax=ax` for
    seaborn), and `st.pyplot(fig)`.
 2. Why does the chart update when the user changes a selectbox? *(CLO-1 ·
@@ -190,6 +190,6 @@ Add a metric showing how many rows are outliers at the current threshold.
    **Answer:** the rerun model — changing the widget re-runs the script, the
    new value flows into the figure code, and a fresh figure is displayed.
 3. What happens if a filter leaves zero rows, and how do you handle it?
-   *(CLO-1 · Evaluate · Medium)*
+   **CLO-1 · Evaluate · Medium**
    **Answer:** the chart becomes empty/errors; guard with `if len(df) == 0:
    st.warning("No data for this filter")` and skip plotting.

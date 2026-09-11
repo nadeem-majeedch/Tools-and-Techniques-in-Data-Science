@@ -268,8 +268,7 @@ auditable. **CLO-3 · Apply · Medium**
 **Q11.3 (Scenario).** Your agent loop has no `max_steps`. A stubborn mock
 keeps requesting tool calls forever. What is the risk and the fix?
 **Answer:** an infinite loop / runaway cost; fix: cap steps (`max_steps=6`)
-and return "max steps reached" with the transcript. **CLO-3 · Analyze ·
-Medium**
+and return "max steps reached" with the transcript. **CLO-3 · Analyze · Medium**
 
 ## L. Streamlit dashboards
 

@@ -184,26 +184,26 @@ if question:
 ## 9. Assessment questions
 
 **Q1.** Why does Streamlit need `@st.cache_data` for the data load, and what
-happens without it? *(CLO-3 · Understand · Easy)*
+happens without it? **CLO-3 · Understand · Easy**
 **Answer:** the script re-runs on every interaction; without caching, the
 CSV would be re-read (and re-parsed) on every click, slowing the app.
 
 **Q2.** Your app's AI answer ignores the `day` filter the user selected. What
-is the likely cause and the fix? *(CLO-3 · Analyze · Medium)*
+is the likely cause and the fix? **CLO-3 · Analyze · Medium**
 **Answer:** the filter state wasn't included in the prompt context — the
 model only sees what you put in the prompt. Fix: inject the current widget
 values into the prompt.
 
 **Q3.** A user types a question into your app's chat box that includes
 "ignore previous instructions…". Why is this a risk, and what do you do?
-*(CLO-3 · Evaluate · Medium)*
+**CLO-3 · Evaluate · Medium**
 **Answer:** prompt injection — untrusted user text can steer the model.
 Mitigate by keeping tool/privileged instructions in the system prompt,
 never executing model output, and treating all chat input as untrusted.
 
 **Q4.** Your team deploys the app to a public URL so friends can try it. The
 data contains store sales by branch. What must you check before deploying?
-*(CLO-3 · Evaluate · Medium)*
+**CLO-3 · Evaluate · Medium**
 **Answer:** data privacy — a public deployment exposes the displayed data to
 anyone; use only public/anonymized data, or keep the deployment local and
 private.

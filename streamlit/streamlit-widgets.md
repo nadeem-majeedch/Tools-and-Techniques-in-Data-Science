@@ -189,5 +189,5 @@ to visualize the total out of 100.
    click; the checkbox keeps its state across reruns until the user changes
    it.
 3. How do you stop an app gracefully when the user's input is invalid?
-   *(CLO-1 · Apply · Medium)*
+   **CLO-1 · Apply · Medium**
    **Answer:** show `st.error(...)` and call `st.stop()`.

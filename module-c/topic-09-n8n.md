@@ -150,7 +150,7 @@ Understand · Easy)*
 **Answer:** trigger → fetch (HTTP) → process (filter/code) → store/notify.
 
 **Q2.** Why is a scheduled n8n workflow an answer to the reproducibility
-problem? *(CLO-3 · Analyze · Medium)*
+problem? **CLO-3 · Analyze · Medium**
 **Answer:** analyses rot when data stops updating; a scheduled workflow
 refetches/refreshes data automatically so downstream notebooks always see
 fresh, consistent input.
@@ -164,7 +164,7 @@ error handling, and check logs on a schedule.
 
 **Q4.** A teammate suggests adding a "Google Sheets" node so the weather data
 syncs to the cloud. What must the team consider first, given the course
-privacy rule? *(CLO-3 · Evaluate · Medium)*
+privacy rule? **CLO-3 · Evaluate · Medium**
 **Answer:** data privacy — syncing to the cloud sends the data to a third
 party; only do it with explicit policy approval, and prefer local file
 output for anything non-public.

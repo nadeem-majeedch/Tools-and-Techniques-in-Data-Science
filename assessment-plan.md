@@ -23,7 +23,43 @@ totals are fixed:
 | **Midterm** | **35%** | Midterm exam 35% |
 | **Final** | **40%** | Final exam 25% · Final project 15% |
 
-## 2. Component details
+## 2. How your final grade is calculated
+
+Every component is converted to a **weighted contribution** out of 100:
+
+```
+weighted contribution = (your marks ÷ maximum marks) × component weight
+```
+
+**Final score (out of 100) = sum of all weighted contributions.**
+
+Worked example:
+
+| Component | Your marks | Max marks | Weight | Contribution |
+|---|---|---|---|---|
+| Labs | 8 | 10 | 10% | (8÷10) × 10 = 8.00 |
+| Quizzes | 4 | 5 | 5% | (4÷5) × 5 = 4.00 |
+| Assignments | 8.5 | 10 | 10% | (8.5÷10) × 10 = 8.50 |
+| Midterm exam | 28 | 35 | 35% | (28÷35) × 35 = 28.00 |
+| Final exam | 20 | 25 | 25% | (20÷25) × 25 = 20.00 |
+| Final project | 12.5 | 15 | 15% | (12.5÷15) × 15 = 12.50 |
+| **Final score** | | | | **81.00 / 100** |
+
+The buckets roll up as Continuous 20.50/25 · Midterm 28.00/35 · Final 32.50/40.
+
+A ready-made **Grade Calculator** (Streamlit app) is included in the course
+repository so you never have to do this by hand:
+
+```bash
+streamlit run tools/grade_app.py
+```
+
+Enter your raw marks per component (leave future components empty); it shows
+raw marks, weights, weighted contributions, bucket subtotals and the final
+score out of 100. The same arithmetic is in `tools/grade_calculator.py`
+(pure Python, self-tested).
+
+## 3. Component details
 
 ### Labs (32 × ~0.3% = 10%)
 Hands-on exercises completed largely in class and finished at home. Each lab has
@@ -67,7 +103,7 @@ to an analysis with a basic model and an AI-assisted or automated component.
 Deliverables: proposal (W13), GitHub repository, presentation (W16), final
 submission with a reproducibility + ethics reflection. See `projects/`.
 
-## 3. Rubric sketch
+## 4. Rubric sketch
 
 *Internal project rubric — the percentages below are applied to the project's
 15% course weight; they are not course-level weights.*
@@ -84,7 +120,7 @@ submission with a reproducibility + ethics reflection. See `projects/`.
 Labs and assignments are graded on correctness, code quality, and completeness
 of required outputs; rubrics are included in each deliverable folder.
 
-## 4. Policies
+## 5. Policies
 
 ### Submission
 - All code-based deliverables are submitted via Git/GitHub (commit history

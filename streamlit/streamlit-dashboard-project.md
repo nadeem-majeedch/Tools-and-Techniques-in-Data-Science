@@ -198,7 +198,7 @@ starting point.
    them to stay put while browsing — putting them inline would scatter them
    across pages.
 2. In the dashboard, why does the Model page's cached model retrain when
-   the "Only smokers" filter changes? *(CLO-2 · Analyze · Medium)*
+   the "Only smokers" filter changes? **CLO-2 · Analyze · Medium**
    **Answer:** the cached function's argument is the *filtered* dataframe,
    which changed — so the cache key changed and training re-ran. That is
    the correct behaviour: a different dataset needs a different model.

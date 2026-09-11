@@ -143,12 +143,12 @@ The point of the example: the model may or may not get the arithmetic right.
 ## 9. Assessment questions
 
 **Q1.** In one sentence, what does an LLM actually do when you ask it a
-question? *(CLO-3 · Understand · Easy)*
+question? **CLO-3 · Understand · Easy**
 **Answer:** It predicts the most probable next token, repeatedly — it does
 not look up facts or compute.
 
 **Q2.** Why is an LLM's confident answer about your course's exam date likely
-wrong? *(CLO-3 · Analyze · Medium)*
+wrong? **CLO-3 · Analyze · Medium**
 **Answer:** The model never saw your syllabus; its knowledge is frozen at
 training time, so anything course-specific is generated (hallucinated) text
 that only *sounds* plausible.
@@ -161,7 +161,7 @@ prompt + model + version + output in the audit log, and verify the answer
 against data by hand so the result doesn't depend on a lucky sample.
 
 **Q4.** Give one task an LLM is genuinely good at in a data workflow and one
-task it must never do alone. *(CLO-3 · Evaluate · Medium)*
+task it must never do alone. **CLO-3 · Evaluate · Medium**
 **Answer:** Good: translating a question into a first draft of pandas code,
 explaining an error, drafting a report section. Never alone: computing
 final numbers or making a decision — those must be verified by code/data.

@@ -164,7 +164,7 @@ Never paste external/untrusted text into prompts, and verify any claim that
 comes out of a prompt that included external text.
 
 **Q4.** Why must the exact prompt be saved alongside the output in your
-audit log? *(CLO-3 · Evaluate · Medium)*
+audit log? **CLO-3 · Evaluate · Medium**
 **Answer:** Reproducibility — a different prompt (or a re-run with sampling)
 can produce a different result; only the logged prompt+version makes the
 step repeatable and auditable.

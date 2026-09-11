@@ -271,7 +271,7 @@ Open-notebook; write runnable code per task.
 
 **Q32.** On `penguins` (dropna): scale the 4 numeric features, run k-means
 with k=3, and print the crosstab of `species` × cluster labels. In one
-sentence, state what the crosstab shows. *(CLO-2 · Apply · Medium)*
+sentence, state what the crosstab shows. **CLO-2 · Apply · Medium**
 **Key:**
 
 ```python
@@ -315,7 +315,7 @@ print("test acc:", pipe.score(Xte, yte).round(3))
 local model, then use it to ask one question about `tips`, and verify the
 answer's key claim against pandas. (If no model is running, print a message
 and complete the verification against the provided sample reply.)
-*(CLO-3 · Apply · Medium)*
+**CLO-3 · Apply · Medium**
 **Key:**
 
 ```python
@@ -342,7 +342,7 @@ print("model claim correct:", truth in reply or "Sunday" in reply)
 **Q35.** A teammate trained a model on all the data, then evaluated it on a
 random 20% *of the same data*, and reports 99% accuracy. Identify the two
 methodological errors and what the honest procedure is.
-*(CLO-2 · Analyze · Hard)*
+**CLO-2 · Analyze · Hard**
 **Answer:** (1) no held-out split — training on all data means "test" rows
 were seen during training (memorization); (2) the 20% was drawn from data
 already used for training — leakage. Honest procedure: split first, fit on
@@ -351,7 +351,7 @@ train for model choice).
 
 **Q36.** Your project uses AI to write EDA code. A reviewer asks for
 evidence that the code is trustworthy. List the four things you should show.
-*(CLO-3 · Evaluate · Hard)*
+**CLO-3 · Evaluate · Hard**
 **Answer:** (1) the disclosure — tool, prompts, how output was used; (2)
 verification — the code runs top-to-bottom and outputs match
 hand-computed/known values; (3) understanding — you can explain each step;
@@ -361,7 +361,7 @@ reproduced.
 **Q37.** A company deploys your tip-prediction model, and an audit finds the
 model systematically underestimates tips for one demographic. You must
 respond. Write the three steps you would take and the ethical principle
-each demonstrates. *(CLO-3 · Evaluate · Hard)*
+each demonstrates. **CLO-3 · Evaluate · Hard**
 **Answer:** (1) investigate — measure per-group error with adequate sample
 sizes (transparency); (2) disclose — report the differential performance to
 stakeholders before deployment (accountability); (3) mitigate — reweight/

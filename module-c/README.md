@@ -11,7 +11,7 @@ Complete teachable material for the modern AI-assisted data science module
 6. Common errors — what students hit and the fix
 7. Limitations — honest boundaries of each tool
 8. Responsible AI considerations — privacy, verification, disclosure
-9. Assessment questions — with answers, tagged CLO-3 · Bloom · difficulty
+9. Assessment questions — with answers, tagged in the standard format `**CLO-3 · Apply · Medium**`
 
 ## Topic index
 

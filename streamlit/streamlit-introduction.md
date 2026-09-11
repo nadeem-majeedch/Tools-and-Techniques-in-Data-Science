@@ -189,13 +189,13 @@ Make it compute the day of the week too (`today.strftime("%A")`).
 
 ## Checkpoint questions
 
-1. What command starts a Streamlit app? *(CLO-1 · Understand · Easy)*
+1. What command starts a Streamlit app? **CLO-1 · Understand · Easy**
    **Answer:** `streamlit run app.py`.
 2. What happens to your script every time the user interacts with a widget?
-   *(CLO-1 · Understand · Easy)*
+   **CLO-1 · Understand · Easy**
    **Answer:** the entire script re-runs from top to bottom (a rerun).
 3. Why do data scientists use Streamlit instead of building websites with
-   HTML/CSS/JS? *(CLO-3 · Evaluate · Medium)*
+   HTML/CSS/JS? **CLO-3 · Evaluate · Medium**
    **Answer:** it needs no web skills, reuses the Python data stack
    directly, and produces interactive apps in minutes — the notebook is for
    exploration, the app is for the audience.

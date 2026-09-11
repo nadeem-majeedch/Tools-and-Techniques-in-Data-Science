@@ -32,6 +32,14 @@ or ask on the course channel.
     website. Your instructor decides when to release them. Until then, the
     labs give you expected outputs so you can check your own work.
 
+??? question "How is my final grade calculated? Can I track it myself?"
+    The scheme is **Continuous 25%** (Labs 10 · Quizzes 5 · Assignments 10),
+    **Midterm 35%**, **Final 40%** (Final exam 25 · Final project 15). Each
+    component contributes `(your marks ÷ max marks) × weight` to a score out
+    of 100 — see [assessment plan §2](../assessment-plan.md). A ready-made
+    [Grade Calculator](../tools/README.md) (Streamlit app) is included in the
+    course repository: run `streamlit run tools/grade_app.py`.
+
 ## Environment & Python
 
 ??? question "`python` is not recognized / not found"

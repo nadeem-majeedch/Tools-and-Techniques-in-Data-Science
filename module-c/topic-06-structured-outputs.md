@@ -191,7 +191,7 @@ Medium)*
 number must be checked against the real aggregation.
 
 **Q3.** Write the three lines that parse a JSON reply and handle a malformed
-one gracefully. *(CLO-3 · Apply · Medium)*
+one gracefully. **CLO-3 · Apply · Medium**
 **Answer:**
 ```python
 try:
@@ -201,7 +201,7 @@ except json.JSONDecodeError:
 ```
 
 **Q4.** Why must structured output be validated against the real data and not
-just parsed? *(CLO-3 · Evaluate · Medium)*
+just parsed? **CLO-3 · Evaluate · Medium**
 **Answer:** parsing only proves the text is JSON; the values are still
 generated guesses — validating against the data is the only check that
 catches hallucinated numbers before they enter your analysis.

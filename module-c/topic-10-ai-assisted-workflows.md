@@ -181,20 +181,20 @@ against the data; log the step (question, tool, version, prompt, output,
 verdict).
 
 **Q2.** Why is a logged, verified AI draft more valuable than a perfect
-unverified answer? *(CLO-3 · Evaluate · Medium)*
+unverified answer? **CLO-3 · Evaluate · Medium**
 **Answer:** the logged one is reproducible, auditable, and attributable —
 you can prove where the number came from; an unverified answer can be
 plausibly wrong and no one can tell.
 
 **Q3.** Your model drafts a cleaning line that drops rows with missing
 `age`. Your teammate wants to use it directly. What do you require first?
-*(CLO-3 · Evaluate · Medium)*
+**CLO-3 · Evaluate · Medium**
 **Answer:** a *reason* for the drop (missingness pattern, proportion), a
 hand-check of how many rows are lost, and a logged entry — the model's
 suggestion is a draft, not a decision.
 
 **Q4.** A report claims "AI did the whole project". Based on this topic, why
-is that sentence itself a red flag? *(CLO-3 · Evaluate · Medium)*
+is that sentence itself a red flag? **CLO-3 · Evaluate · Medium**
 **Answer:** in a proper AI-assisted workflow the human runs, verifies, and
 decides at every step; "the AI did it" means no verification protocol was
 applied — which is exactly the failure mode the protocol prevents.

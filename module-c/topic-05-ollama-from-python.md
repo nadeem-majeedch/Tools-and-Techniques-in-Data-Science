@@ -175,18 +175,18 @@ Dataset: `sns.load_dataset("tips")`.
 ## 9. Assessment questions
 
 **Q1.** Why must you re-send the conversation history on every `ollama.chat`
-call? *(CLO-3 · Understand · Easy)*
+call? **CLO-3 · Understand · Easy**
 **Answer:** The model has no memory — the `messages` list is the entire
 state; each call is stateless inference over what you send.
 
 **Q2.** The same question returns different answers on two runs. What causes
-this and how do you make the step reproducible? *(CLO-3 · Analyze · Medium)*
+this and how do you make the step reproducible? **CLO-3 · Analyze · Medium**
 **Answer:** token sampling is random. Set a low temperature, and log the
 exact model, prompt, and options with the output so the step can be
 re-run/audited.
 
 **Q3.** Write the two lines of code that send a system+user message to
-llama3.2 and print the reply. *(CLO-3 · Apply · Medium)*
+llama3.2 and print the reply. **CLO-3 · Apply · Medium**
 **Answer:**
 ```python
 resp = ollama.chat(model="llama3.2", messages=[{"role": "system", "content": s},
@@ -195,7 +195,7 @@ print(resp["message"]["content"])
 ```
 
 **Q4.** Why is "send the whole CSV in the prompt" a bad idea even with a
-local model? *(CLO-3 · Evaluate · Medium)*
+local model? **CLO-3 · Evaluate · Medium**
 **Answer:** the context window can't hold it (truncation), and the model
 won't reliably compute over thousands of rows — summarize/aggregate first,
 then ask.

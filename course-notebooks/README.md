@@ -73,6 +73,33 @@ To rebuild or re-verify after editing a source module:
 .venv/Scripts/python scripts/execute_notebooks.py
 ```
 
+## Continuous integration & read-only checking
+
+GitHub Actions runs the same validation on every push and pull request that
+touches the notebooks (`.github/workflows/notebooks.yml`). CI executes all
+20 notebooks with a real kernel and fails if any cell raises an error.
+
+Two properties matter:
+
+- **Notebooks are never modified by CI.** `scripts/check_notebooks.py`
+  executes each notebook *in memory* and discards the outputs, so the
+  `.ipynb` files on disk are untouched (the workflow double-checks this with
+  `git diff`).
+- **No optional services are required.** The Ollama daemon is not installed
+  in CI; notebooks 14–18 detect that and run their mock/simulation paths.
+  No API keys or paid services are used anywhere.
+
+To run the same check locally before pushing (nothing is modified):
+
+```bash
+.venv/Scripts/python -m pip install -r requirements.txt nbclient nbformat
+.venv/Scripts/python scripts/check_notebooks.py          # all notebooks
+.venv/Scripts/python scripts/check_notebooks.py 03 12    # a subset
+```
+
+Use `scripts/execute_notebooks.py` instead **only** when you intentionally
+want to re-execute and save outputs back into the delivered files.
+
 *Instructor note:* exercise cells ship with `# your code here` placeholders
 followed by worked solutions — delete the solution cells before distributing
 if you want the exercises unsolved.

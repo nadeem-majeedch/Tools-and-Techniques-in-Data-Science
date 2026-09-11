@@ -81,7 +81,7 @@ a) float64  b) int64  c) object  d) str (new pandas dtype)
 
 **Q9 (MCQ).** Which command uploads your local commits to GitHub?
 a) `git commit`  b) `git add`  c) `git push`  d) `git merge`
-**Answer:** c). **CLO-1/CLO-3 · Remember · Easy**
+**Answer:** c). **CLO-1, CLO-3 · Remember · Easy**
 
 **Q10 (MCQ).** An API response has status 200 but `resp.json()` raises.
 The most likely cause:
@@ -232,7 +232,7 @@ first, then convert. **CLO-1 · Analyze · Medium**
 saved figure was generated before the data fix. What habit prevents this?
 **Answer:** re-run the notebook top-to-bottom (Restart & Run All) before
 exporting figures, and regenerate outputs after every data change — stale
-outputs are a reproducibility failure. **CLO-1/CLO-3 · Evaluate · Medium**
+outputs are a reproducibility failure. **CLO-1, CLO-3 · Evaluate · Medium**
 
 ## Part IV — Short answer (6 × 3 = 18)
 
@@ -279,7 +279,7 @@ on `tips` (seaborn built-in).
 
 **Q32.** Load `tips`, drop rows with missing values, then print: the shape,
 the mean tip for `day == "Sat"`, and the number of rows with `size == 2`
-and `total_bill > 30`. *(CLO-1 · Apply · Medium)*
+and `total_bill > 30`. **CLO-1 · Apply · Medium**
 **Key:**
 
 ```python
@@ -292,7 +292,7 @@ print(len(tips[(tips["size"] == 2) & (tips["total_bill"] > 30)]))  # 3
 
 **Q33.** Build one figure with two subplots: (a) a histogram of `tip` (15
 bins); (b) a scatter of `total_bill` vs `tip` with `alpha=0.5`. Label all
-axes; save to `midterm-q33.png` at 150 dpi. *(CLO-1 · Apply · Medium)*
+axes; save to `midterm-q33.png` at 150 dpi. **CLO-1 · Apply · Medium**
 **Key:**
 
 ```python
@@ -309,7 +309,7 @@ fig.savefig("midterm-q33.png", dpi=150, bbox_inches="tight")
 **Q34.** From the flights dataset, compute with pandas: the year with the
 highest total passengers and the single month–year with the most passengers.
 Then write ONE sentence interpreting what the pair of answers says about
-growth. *(CLO-1 · Apply · Medium)*
+growth. **CLO-1 · Apply · Medium**
 **Key:**
 
 ```python
@@ -326,7 +326,7 @@ print(flights.loc[flights["passengers"].idxmax()])            # July 1960
 
 **Q35.** A teammate merges two CSV exports by concatenating them and reports
 "the total revenue doubled." List the two most likely causes and how you
-would confirm each. *(CLO-1 · Analyze · Hard)*
+would confirm each. **CLO-1 · Analyze · Hard**
 **Answer:** (1) the exports overlap (same transactions in both) — confirm
 with `duplicated()` on an invoice id; (2) the concatenation kept duplicate
 rows (no dedup by key) — confirm by comparing `len` before/after
@@ -335,7 +335,7 @@ of blindly concatenating.
 
 **Q36.** Your EDA notebook produces a scatter that appears to show a strong
 relationship, but the correlation is 0.12. Give two explanations and the
-check for each. *(CLO-1 · Analyze · Hard)*
+check for each. **CLO-1 · Analyze · Hard**
 **Answer:** (1) the relationship is nonlinear (correlation measures linear
 association) — check with a residual/binned-means plot; (2) an outlier or
 mis-encoded group dominates the visual — check `groupby` means and a

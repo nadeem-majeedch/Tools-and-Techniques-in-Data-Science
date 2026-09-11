@@ -39,6 +39,7 @@ DIRS = [
     "datasets",
     "guides",
     "assessments",
+    "tools",
 ]
 
 # Files (relative to the repo root) that become top-level pages.
@@ -66,10 +67,13 @@ EXCLUDE = {
 
 
 def ignore(dirname: str, names: list[str]) -> set[str]:
-    """shutil ignore callback: drop EXCLUDE paths from the copy."""
+    """shutil ignore callback: drop EXCLUDE paths and caches from the copy."""
     rel_dir = Path(dirname).resolve()
     skipped: set[str] = set()
     for name in names:
+        if name == "__pycache__" or name.endswith(".pyc"):
+            skipped.add(name)
+            continue
         rel = rel_dir.joinpath(name).relative_to(ROOT)
         parts = rel.parts
         if any("/".join(parts[: n + 1]) in EXCLUDE for n in range(len(parts))):

@@ -189,7 +189,7 @@ Dataset: `sns.load_dataset("titanic")`.
 arguments; execution and validation are yours.
 
 **Q2.** Why is it safe(ish) for a model to call your tools, but NOT safe to
-let it run arbitrary Python? *(CLO-3 · Evaluate · Medium)*
+let it run arbitrary Python? **CLO-3 · Evaluate · Medium**
 **Answer:** Tools are whitelisted, validated functions with real results; a
 model running arbitrary code could execute anything (deletions, network,
 injection). The whitelist bounds the blast radius.
@@ -202,7 +202,7 @@ Apply · Medium)*
 silently computing garbage.
 
 **Q4.** Why is the model's *final answer* still subject to verification even
-though the tool results are real? *(CLO-3 · Evaluate · Medium)*
+though the tool results are real? **CLO-3 · Evaluate · Medium**
 **Answer:** The tool output is real, but the model's summary/interpretation
 of it is still generated text that can misread the numbers — verify the
 claim against the tool result directly.

@@ -211,18 +211,18 @@ have just built a model-comparison app.
 ## Checkpoint questions
 
 1. What is the difference between `@st.cache_data` and
-   `st.session_state`? *(CLO-1 · Understand · Medium)*
+   `st.session_state`? **CLO-1 · Understand · Medium**
    **Answer:** caching stores the *result of an expensive function* keyed by
    its arguments (shared, computation-focused); session state stores
    *variables across reruns* per user session (memory-focused). Caching
    stops repeated work; session state stops resetting values.
 2. Why is it safe for the model to be cached but the sliders to re-run the
-   prediction? *(CLO-2 · Analyze · Medium)*
+   prediction? **CLO-2 · Analyze · Medium**
    **Answer:** training is the expensive, dataset-dependent step and is
    identical every rerun; prediction is cheap, instant, and depends on the
    current widget values — so only it should re-run.
 3. Your cache "doesn't work" — the model retrains every time you move a
-   slider. What's the most likely cause? *(CLO-2 · Evaluate · Medium)*
+   slider. What's the most likely cause? **CLO-2 · Evaluate · Medium**
    **Answer:** the cached function receives widget-dependent arguments
    (e.g. `n_neighbors` from a selectbox), so every change creates a new
    cache entry — cache training on fixed inputs, or only the data loading.

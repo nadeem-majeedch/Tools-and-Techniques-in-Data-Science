@@ -162,19 +162,19 @@ Dataset: `sns.load_dataset("titanic")`.
 ## 9. Assessment questions
 
 **Q1.** What exactly does the LLM inside PandasAI see about your dataframe?
-*(CLO-3 · Understand · Easy)*
+**CLO-3 · Understand · Easy**
 **Answer:** column names and types (the schema), not the rows — which is why
 local models can be used without leaking the data itself.
 
 **Q2.** PandasAI says the average tip on Saturday is 3.03. Your own
 `groupby("day")["tip"].mean()` says 2.99. What is the most likely cause and
-what do you do? *(CLO-3 · Evaluate · Medium)*
+what do you do? **CLO-3 · Evaluate · Medium**
 **Answer:** the model mistranslated the question (wrong filter/grouping).
 Do not trust the answer; rephrase with explicit constraints, re-run, and
 re-verify. Log the mismatch.
 
 **Q3.** Why is PandasAI "not a replacement for learning pandas"? Give one
-reason. *(CLO-3 · Evaluate · Medium)*
+reason. **CLO-3 · Evaluate · Medium**
 **Answer:** you must be able to read and verify the generated code; without
 pandas skills you cannot detect a plausible wrong answer.
 

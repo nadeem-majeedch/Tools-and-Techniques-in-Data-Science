@@ -1,7 +1,7 @@
 # Assignment 2 — API + Data Acquisition + Streamlit Data Application
 
 **Released:** W9 S17 · **Due:** W15 S30 (before session start) · **Individual**
-**Weight:** 7.5% of course grade (part of the 15% assignment component)
+**Weight:** 5% of course grade (part of the 10% assignments component)
 **CLO mapping:** CLO-1 (data acquisition/cleaning/EDA/viz), CLO-3
 (reproducibility, documentation, responsible data use)
 

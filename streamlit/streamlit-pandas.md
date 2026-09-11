@@ -167,7 +167,7 @@ user sees the effect of cleaning.
    **Answer:** a labeled number — "Rows" with the current dataframe length —
    optionally with a delta arrow.
 3. Write the two lines that load an uploaded CSV and show only its first 5
-   rows. *(CLO-1 · Apply · Medium)*
+   rows. **CLO-1 · Apply · Medium**
    **Answer:**
    ```python
    df = pd.read_csv(uploaded)

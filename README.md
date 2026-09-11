@@ -67,7 +67,7 @@ assignments) / 35% midterm / 40% final (exam + project) distribution — see
 ├── mkdocs.yml             # Website config (navigation, theme, what to publish)
 ├── website-requirements.txt
 ├── requirements.txt       # Python dependencies
-├── .github/workflows/     # GitHub Actions (website build & deploy)
+├── .github/workflows/     # GitHub Actions (notebook CI, website build & deploy)
 ├── scripts/               # Build helpers (notebooks, website mirror, datasets)
 ├── sessions/              # Per-session teaching material (32 sessions)
 ├── course-notebooks/      # Executed Jupyter notebooks (20, numbered 01–20)
@@ -80,6 +80,7 @@ assignments) / 35% midterm / 40% final (exam + project) distribution — see
 ├── assignments/           # 2 graded assignments (cleaning+EDA, API+Streamlit)
 ├── labs/                  # 32 lab exercises + instructor solutions
 ├── datasets/              # Dataset registry and small data files
+├── tools/                 # Grade calculator (Streamlit app, 25/35/40 scheme)
 ├── projects/              # Final project framework (guidelines, rubric, templates)
 └── resources/             # Setup guide, readings, cheatsheets
 ```

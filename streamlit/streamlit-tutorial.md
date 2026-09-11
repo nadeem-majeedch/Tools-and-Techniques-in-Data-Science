@@ -154,14 +154,14 @@ is the normal workflow: write, save, rerun, tweak.
 
 ## Tutorial checkpoint
 
-1. In one sentence, what is a rerun? *(CLO-1 · Understand · Easy)*
+1. In one sentence, what is a rerun? **CLO-1 · Understand · Easy**
    **Answer:** Streamlit executes the whole script again from top to bottom
    whenever a widget changes or the file is saved.
 2. Why does `if st.button(...):` work even though the button is "just a
-   widget"? *(CLO-1 · Understand · Easy)*
+   widget"? **CLO-1 · Understand · Easy**
    **Answer:** the button returns `True` on the rerun caused by the click, so
    the `if` block runs exactly once per click.
 3. Your counter resets to 1 after every click. What is the one-line fix?
-   *(CLO-1 · Apply · Medium)*
+   **CLO-1 · Apply · Medium**
    **Answer:** keep the count in `st.session_state` instead of a normal
    variable.

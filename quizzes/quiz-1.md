@@ -67,22 +67,21 @@ b) Creates a snapshot of the staged changes with a message.
 c) Saves the file to disk.
 d) Merges two branches.
 **Answer:** b) — commit snapshots the *staged* content; `git push` uploads,
-`git add` stages. **CLO-1/CLO-3 · Understand · Easy**
+`git add` stages. **CLO-1, CLO-3 · Understand · Easy**
 
 **Q2.2 (Scenario).** Two students edit the same line of `eda.ipynb` on
 different branches and then merge. Git reports a conflict. Explain why, and
 give the correct resolution steps.
 **Answer:** both branches changed the same lines, so Git cannot choose
 automatically. Resolve: open the file, keep the intended version(s), then
-`git add <file>` and `git commit` to record the merge. **CLO-3 · Analyze ·
-Medium**
+`git add <file>` and `git commit` to record the merge. **CLO-3 · Analyze · Medium**
 
 **Q2.3 (Command tracing).** Order these commands so the final result is a
 pushed commit containing only `notebook.ipynb`:
 `git commit -m "..."`, `git push origin main`, `git add notebook.ipynb`,
 `git status`.
 **Answer:** `git status` (inspect) → `git add notebook.ipynb` → `git commit
--m "..."` → `git push origin main`. **CLO-1/CLO-3 · Apply · Easy**
+-m "..."` → `git push origin main`. **CLO-1, CLO-3 · Apply · Easy**
 
 **Q2.4 (Conceptual).** Why write commit messages that explain *why* a change
 was made rather than *what* changed? Give one concrete benefit.
@@ -144,8 +143,7 @@ df = pd.DataFrame({"day": ["Sat", "Sun", "Sat"], "tip": [2.0, 3.0, 4.0]})
 print(df.groupby("day")["tip"].mean())
 ```
 
-**Answer:** `day`-indexed Series: `Sat 3.0`, `Sun 3.0`. **CLO-1 · Apply ·
-Easy**
+**Answer:** `day`-indexed Series: `Sat 3.0`, `Sun 3.0`. **CLO-1 · Apply · Easy**
 
 **Q4.3 (Debugging).** This raises an error. Explain why and fix it.
 

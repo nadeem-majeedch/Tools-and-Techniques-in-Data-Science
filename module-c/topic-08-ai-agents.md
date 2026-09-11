@@ -190,7 +190,7 @@ the result and decide again (bounded by max steps).
 
 **Q2.** Your agent keeps calling `count_outliers` with the same arguments and
 never produces an answer. What's the most likely cause and the fix?
-*(CLO-3 · Analyze · Medium)*
+**CLO-3 · Analyze · Medium**
 **Answer:** the tool result doesn't advance the task (or the model can't
 interpret it), so it retries. Fix: improve/validate the tool result or
 bound the loop — and check that the question is answerable with the tools
@@ -203,7 +203,7 @@ with no answer; `max_steps` makes failure cheap and predictable.
 
 **Q4.** An agent reports "weekend tips are higher" after calling
 `avg_tip_by("day")`. What must you do before trusting that claim?
-*(CLO-3 · Evaluate · Medium)*
+**CLO-3 · Evaluate · Medium**
 **Answer:** verify against the logged tool result (or recompute with pandas)
 — the tool output is real, but the model's summarization of it is still
 generated text and can misread the numbers.

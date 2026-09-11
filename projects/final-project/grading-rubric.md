@@ -22,7 +22,7 @@ institutional bucket) · **Rubric version:** v1.1
 ## 2. Main submission rubric (85% of project grade)
 
 Each criterion is scored on the scale in §3. Weights follow
-`assessment-plan.md` §3.
+`assessment-plan.md` §4.
 
 | # | Criterion (weight) | What we grade | CLO |
 |---|---|---|---|
