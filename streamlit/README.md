@@ -1,6 +1,8 @@
 # Streamlit Module — Building Data Apps in Pure Python
 
-**Audience:** BS Data Science, 3rd semester · **Level:** Beginner
+**Audience:** shared by BS Data Science 3rd semester (Introduction to Data
+Science) and MS Data Science 1st semester (Tools and Techniques in Data
+Science) · **Level:** Beginner
 **Prerequisites:** pandas, Matplotlib/Seaborn, basic scikit-learn (Module A/B)
 **No HTML, CSS, or JavaScript required — Streamlit apps are 100% Python.**
 

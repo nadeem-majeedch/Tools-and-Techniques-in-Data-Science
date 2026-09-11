@@ -30,7 +30,9 @@ map 1:1 to the sessions in `../weekly-schedule.md`.
 
 ## Conventions
 
-- **Audience:** BS Data Science 3rd-semester beginners. Concepts are introduced
+- **Audience:** shared between two courses — BS Data Science 3rd-semester
+  students (Introduction to Data Science) and MS Data Science 1st-semester
+  students (Tools and Techniques in Data Science). Concepts are introduced
   with intuition and plain language first; formal/mathematical detail is added
   only when it aids understanding.
 - **Datasets:** prefer built-in data (`sns.load_dataset`, `sklearn.datasets`)

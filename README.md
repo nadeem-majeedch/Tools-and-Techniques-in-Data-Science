@@ -3,7 +3,9 @@
 
 | | |
 |---|---|
-| **Program** | BS Data Science — 3rd Semester |
+| **Course 1** | Introduction to Data Science — BS Data Science, 3rd Semester |
+| **Course 2** | Tools and Techniques in Data Science — MS Data Science, 1st Semester |
+| **Shared material** | This repository holds one shared set of teaching materials (sessions, notebooks, labs, assessments, project) used by **both** courses |
 | **Duration** | 16 weeks · 2 sessions per week · 90 minutes per session (32 sessions) |
 | **Language** | Python |
 | **Stack** | Jupyter · Git/GitHub · NumPy · Pandas · Matplotlib · Seaborn · Scikit-learn · PandasAI · Ollama · n8n |
